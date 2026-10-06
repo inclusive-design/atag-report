@@ -1,807 +1,799 @@
-atag-2026-07-31:
-    type: report
-    date: 2026-07-31
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_Jul31_2026.html
-
-atag-2026-06-19:
-    type: report
-    date: 2026-06-19
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_Jun19_2026.html
-
-atag-2026-05-08:
-    type: report
-    date: 2026-05-08
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_May08_2026.html
-
-atag-2026-05-22:
-    type: report
-    date: 2026-05-22
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_May22_2026.html
-
-atag-2025-12-05:
-    type: report
-    date: 2025-12-05
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_Dec05_2025.html
-
-atag-2026-08-07:
-    type: report
-    date: 2026-08-07
-    title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
-    author: Authoring Tool Accessibility Guidelines CG
-    url: https://w3c-cg.github.io/atag/minutes/minutes_Aug07_2026.html
-atag:
-  type: misc
-  title: Authoring {Tool} {Accessibility} {Guidelines} ({ATAG}) 2.0
-  author: World Wide Web Consortion
-  date: 2015-09-24
-  url:
-    value: https://www.w3.org/TR/ATAG20/
-    date: 2026-04-18
-chen_screen_2025:
-  type: misc
-  title:
-    value: 'Screen {Reader} {Programmers} in the {Vibe} {Coding} {Era}: {Adaptation}, {Empowerment}, and {New} {Accessibility} {Landscape}'
-    short: Screen {Reader} {Programmers} in the {Vibe} {Coding} {Era}
-  author:
-  - Chen, Nan
-  - Qiu, Luna K.
-  - Wang, Arran Zeyu
-  - Wang, Zilong
-  - Yang, Yuqing
-  date: 2025-12
-  publisher: arXiv
-  url:
-    value: http://arxiv.org/abs/2506.13270
-    date: 2026-05-20
-  serial-number:
-    doi: 10.48550/arXiv.2506.13270
-  note: arXiv:2506.13270 [cs.HC]
-  abstract: Generative AI agents are reshaping human-computer interaction, shifting users from direct task execution to supervising machine-driven actions, especially the rise of "vibe coding" in programming. Yet little is known about how screen reader programmers interact with AI code assistants in practice. We conducted a longitudinal study with 16 blind and low-vision programmers. Participants completed a GitHub Copilot tutorial, engaged with a programming task, and provided initial feedback. After two weeks of AI-assisted programming, follow-ups examined how their practices and perceptions evolved. Our findings show that code assistants enhanced programming efficiency and bridged accessibility gaps. However, participants struggled to convey intent, interpret AI outputs, and manage multiple views while maintaining situational awareness. They showed diverse preferences for accessibility features, expressed a need to balance automation with control, and encountered barriers when learning to use these tools. Furthermore, we propose design principles and recommendations for more accessible and inclusive human-AI collaborations.
-ok-top-3337_blind_2025:
-  type: misc
-  title: A blind developer using {Claude} to create accessible software can’t acces {Claude}.
-  author: Ok-Top-3337
-  date: 2025-06
-  url:
-    value: https://www.reddit.com/r/ClaudeAI/comments/1lhqnse/a_blind_developer_using_claude_to_create/
-    date: 2026-05-20
-  genre: Reddit Post
 abu_doush_can_2025:
-  type: article
-  title:
-    value: Can generative {AI} create accessible web code? {A} benchmark analysis of {AI}-generated {HTML} against accessibility standards
-    short: Can generative {AI} create accessible web code?
+  abstract: This study investigates the accessibility performance of leading generative AI models, ChatGPT 4o, Copilot Pro, Claude 3.7 Sonnet, and Grok 3, when used to generate web components that conform to WCAG 2.1 accessibility standards. Eleven different components, including skip to main content, negative tab index, select-only combo box, two-state checkbox, accordion user interface, login form, sign-up form, table with one header, table with multiple headers, images of text, and complex images, were tested. For each web component, every GAI model was first provided with a foundation prompt containing detailed context and accessibility requirements. This was followed by a main prompt that specified the web component to be generated. Once the model produced the full code, the resulting web page was manually tested using keyboard navigation and screen reader, and compared against an ideal code developed according to accessibility standards. If any issues were identified, a follow-up prompt was issued clearly describing the problems that needed to be addressed. The results show that while all models are capable of producing semantically valid code, they frequently fail to meet full accessibility compliance without further prompting and human interventions. Claude 3.7 Sonnet and ChatGPT 4o demonstrated the strongest performance, with fewer violations and less reliance on follow-up instructions. Follow-up prompting significantly improved results, highlighting the importance of prompt engineering. The findings confirm that GAI can support accessible web development, but it requires guidance and human oversight to ensure compliance with standards.
   author:
-  - Abu Doush, Iyad
-  - Kassem, Reem
+    - Abu Doush, Iyad
+    - Kassem, Reem
   date: 2025-07
   page-range: 3483-3506
-  url:
-    value: https://doi.org/10.1007/s10209-025-01250-2
-    date: 2026-05-20
+  parent:
+    issue: 4
+    title: Universal Access in the Information Society
+    type: periodical
+    volume: 24
   serial-number:
     doi: 10.1007/s10209-025-01250-2
     issn: 1615-5289
-  abstract: This study investigates the accessibility performance of leading generative AI models, ChatGPT 4o, Copilot Pro, Claude 3.7 Sonnet, and Grok 3, when used to generate web components that conform to WCAG 2.1 accessibility standards. Eleven different components, including skip to main content, negative tab index, select-only combo box, two-state checkbox, accordion user interface, login form, sign-up form, table with one header, table with multiple headers, images of text, and complex images, were tested. For each web component, every GAI model was first provided with a foundation prompt containing detailed context and accessibility requirements. This was followed by a main prompt that specified the web component to be generated. Once the model produced the full code, the resulting web page was manually tested using keyboard navigation and screen reader, and compared against an ideal code developed according to accessibility standards. If any issues were identified, a follow-up prompt was issued clearly describing the problems that needed to be addressed. The results show that while all models are capable of producing semantically valid code, they frequently fail to meet full accessibility compliance without further prompting and human interventions. Claude 3.7 Sonnet and ChatGPT 4o demonstrated the strongest performance, with fewer violations and less reliance on follow-up instructions. Follow-up prompting significantly improved results, highlighting the importance of prompt engineering. The findings confirm that GAI can support accessible web development, but it requires guidance and human oversight to ensure compliance with standards.
-  parent:
-    type: periodical
-    title: Universal Access in the Information Society
-    issue: 4
-    volume: 24
-canasc:
-  type: misc
-  title: '{CAN}/{ASC} - {EN} 301 549:2024 {Accessibility} requirements for {ICT} products and services ({EN} 301 549:2021, {IDT})'
-  date: 2024-05
-  author: Accessibility Standards Canada
-  url:
-    value: https://accessible.canada.ca/creating-accessibility-standards/canasc-en-301-5492024-accessibility-requirements-ict-products-and-services
-    date: 2026-05-21
-naur:
-  type: misc
-  title: Natural {Language} {Interface} {Accessibility} {User} {Requirements} ({NAUR})
-  date: 2022-09-03
-  author: World Wide Web Consortium
-  url:
-    value: https://www.w3.org/TR/naur/
-    date: 2026-05-21
-yeratziotis_web-based_2025:
-  type: article
-  title: A {Web}-{Based} {Tool} for {Automated} {Recognition}, {Authoring} and {Enhancement} of {Alt}-{Text}
-  author:
-  - Yeratziotis, Alexandros
-  - Tsouris, Constantinos
-  - Mettouris, Christos
-  - Kyprianou, Marios
-  - Papadopoulos, George Angelos
-  date: 2025-12
-  page-range: 235-243
-  url:
-    value: https://dl.acm.org/doi/10.1145/3748699.3749797
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3748699.3749797
-    isbn: 979-8-4007-2089-5
-  abstract: Web users vary widely in characteristics such as age, education level, technological proficiency, and, critically, ability. Disabilities - whether sensory (e.g., vision or hearing), motor (e.g., limited hand mobility), or cognitive (e.g., learning difficulties) - affect a significant portion of the population and can hinder equitable access to online content. Designing with accessibility and inclusiveness in mind is essential to ensuring equal access for all users. One key requirement for web accessibility is the use of meaningful alternative text (alt-text) for images.This paper presents a tool for automatic recognition, authoring, and enhancement of image alt-text, developed in alignment with established accessibility guidelines. The tool design was informed by a review on web accessibility and alt-text practices, with particular attention to common challenges and the critical role of alt-text in inclusive web design. Existing tools were also examined to identify gaps and inform improvements. Building on this foundation, the Alt-Text Authoring Tool was developed and evaluated against similar tools, demonstrating enhanced functionality. The tool was evaluated by ICT professionals in Greece and Cyprus with respect to its usefulness, usability, educational value, and potential for adoption.
-  parent:
-    type: proceedings
-    title: Proceedings of the 2025 {International} {Conference} on {Information} {Technology} for {Social} {Good}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{GoodIT} ''25'
-aljedaani_does_2024:
-  type: article
   title:
-    value: Does {ChatGPT} {Generate} {Accessible} {Code}? {Investigating} {Accessibility} {Challenges} in {LLM}-{Generated} {Source} {Code}
-    short: Does {ChatGPT} {Generate} {Accessible} {Code}?
+    short: Can generative {AI} create accessible web code?
+    value: Can generative {AI} create accessible web code? {A} benchmark analysis of {AI}-generated {HTML} against accessibility standards
+  type: article
+  url:
+    date: 2026-05-20
+    value: https://doi.org/10.1007/s10209-025-01250-2
+aljedaani_does_2024:
+  abstract: 'Context. Large Language Models (LLMs) such as GPT-3.5 show great promise in generating source code based on natural language descriptions, which could significantly facilitate web development. However, the level of accessibility in generated code by these models is still unexplored.Objective. We empirically evaluate the accessibility of the web code produced by ChatGPT and its ability to fix accessibility violations in two contexts: its own generated code and open-source web code extracted from GitHub.Method. A total of 88 web developers used natural language descriptions to prompt ChatGPT to create websites with diverse characteristics and web elements. Such websites were assessed by two well-known accessibility checker tools, and ChatGPT was prompted to fix the accessibility violations found. Finally, the model was used to address accessibility violations in different open-source projects from GitHub.Result. The majority of websites (84%) generated by ChatGPT exhibited many accessibility problems. While the model demonstrates strength in adhering to certain accessibility guidelines, it struggles with specific aspects related to established accessibility principles. ChatGPT achieved a 70% success rate in rectifying the accessibility violations within its generated source code and a 73% success rate in fixing accessibility issues within third-party open-source project code. These findings can help developers to understand potential areas requiring intervention to ensure website inclusivity.'
   author:
-  - Aljedaani, Wajdi
-  - Habib, Abdulrahman
-  - Aljohani, Ahmed
-  - Eler, Marcelo
-  - Feng, Yunhe
+    - Aljedaani, Wajdi
+    - Habib, Abdulrahman
+    - Aljohani, Ahmed
+    - Eler, Marcelo
+    - Feng, Yunhe
   date: 2024-10
   page-range: 165-176
-  url:
-    value: https://dl.acm.org/doi/10.1145/3677846.3677854
-    date: 2026-05-21
+  parent:
+    parent:
+      title: "{W4A} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 21st {International} {Web} for {All} {Conference}
+    type: proceedings
   serial-number:
     doi: 10.1145/3677846.3677854
     isbn: 979-8-4007-1030-8
-  abstract: 'Context. Large Language Models (LLMs) such as GPT-3.5 show great promise in generating source code based on natural language descriptions, which could significantly facilitate web development. However, the level of accessibility in generated code by these models is still unexplored.Objective. We empirically evaluate the accessibility of the web code produced by ChatGPT and its ability to fix accessibility violations in two contexts: its own generated code and open-source web code extracted from GitHub.Method. A total of 88 web developers used natural language descriptions to prompt ChatGPT to create websites with diverse characteristics and web elements. Such websites were assessed by two well-known accessibility checker tools, and ChatGPT was prompted to fix the accessibility violations found. Finally, the model was used to address accessibility violations in different open-source projects from GitHub.Result. The majority of websites (84%) generated by ChatGPT exhibited many accessibility problems. While the model demonstrates strength in adhering to certain accessibility guidelines, it struggles with specific aspects related to established accessibility principles. ChatGPT achieved a 70% success rate in rectifying the accessibility violations within its generated source code and a 73% success rate in fixing accessibility issues within third-party open-source project code. These findings can help developers to understand potential areas requiring intervention to ensure website inclusivity.'
-  parent:
-    type: proceedings
-    title: Proceedings of the 21st {International} {Web} for {All} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{W4A} ''24'
-mowar_accessibility_2024:
-  type: article
-  title: Accessibility in {AI}-{Assisted} {Web} {Development}
-  author: Mowar, Peya
-  date: 2024-10
-  page-range: 123-125
-  url:
-    value: https://dl.acm.org/doi/10.1145/3677846.3679054
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3677846.3679054
-    isbn: 979-8-4007-1030-8
-  abstract: Despite extensive accessibility research, inaccessible websites remain stubbornly prevalent, partly due to limited accessibility awareness among web developers. The advent of code generation models presents an opportunity to guide accessibility-unaware developers toward enhanced accessibility practices. Our work examines the current state of accessibility in AI-assisted web development. Empirical evidence reveals code generation models serve as a double-edged sword, prompting a discussion on future research directions.
-  parent:
-    type: proceedings
-    title: Proceedings of the 21st {International} {Web} for {All} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{W4A} ''24'
-patel_exploring_2025:
-  type: article
-  title: Exploring {Student} {Developers}’ {Trust}, {Adoption}, and {Usage} of {AI}-{Powered} {Coding} {Assistants} for {Web} {Accessibility} {Compliance}
-  author:
-  - Patel, Pooja
-  - Melcer, Edward Franklin
-  date: 2025-07
-  page-range: 298-301
-  url:
-    value: https://dl.acm.org/doi/10.1145/3733155.3737913
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3733155.3737913
-    isbn: 979-8-4007-1402-3
-  abstract: Web accessibility is a cornerstone of inclusive digital design, yet developers often face challenges in effectively implementing best practices. AI development assistants (AIDA) have emerged as potential solutions, offering automated code suggestions and accessibility recommendations. However, little is known about how student developers perceive and integrate these tools to ensure compliance with web accessibility standards. To address this gap, we conducted an exploratory study using semi-structured interviews with 14 student web developers to understand their experiences with AIDA as well as barriers to adoption. The findings emphasized that confidence in AI-generated accessibility suggestions was often limited, conditional, and shaped by student developer perceptions of reliability, transparency, and contextual awareness.
-  parent:
-    type: proceedings
-    title: Proceedings of the 18th {ACM} {International} {Conference} on {PErvasive} {Technologies} {Related} to {Assistive} {Environments}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{PETRA} ''25'
-mowar_tab_2024:
-  type: article
   title:
-    value: 'Tab to {Autocomplete}: {The} {Effects} of {AI} {Coding} {Assistants} on {Web} {Accessibility}'
-    short: Tab to {Autocomplete}
-  author:
-  - Mowar, Peya
-  - Peng, Yi-Hao
-  - Steinfeld, Aaron
-  - Bigham, Jeffrey P
-  date: 2024-10
-  page-range: 1-6
+    short: Does {ChatGPT} {Generate} {Accessible} {Code}?
+    value: Does {ChatGPT} {Generate} {Accessible} {Code}? {Investigating} {Accessibility} {Challenges} in {LLM}-{Generated} {Source} {Code}
+  type: article
   url:
-    value: https://dl.acm.org/doi/10.1145/3663548.3688513
     date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3663548.3688513
-    isbn: 979-8-4007-0677-6
-  abstract: A long-standing challenge in accessible computing has been to get developers to produce the accessible UI code necessary for assistive technologies to work properly. AI coding assistants (e.g., Github Copilot) potentially offer a new opportunity to make UI code more accessible automatically, but it is unclear how their use impacts code accessibility and what developers need to know in order to use them effectively. In this paper, we report on a study where developers untrained in accessibility were tasked with building web UI components with and without an AI coding assistant. Our findings suggest that while current AI coding assistants show potential for creating more accessible UIs, they currently require accessibility awareness and expertise, limiting their expected impact.
-  parent:
-    type: proceedings
-    title: Proceedings of the 26th {International} {ACM} {SIGACCESS} {Conference} on {Computers} and {Accessibility}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{ASSETS} ''24'
-palmer_constructing_2025:
-  type: article
-  title:
-    value: 'Constructing {Websites} with {Generative} {AI} {Tools}: {The} {Accessibility} of {Their} {Workflows} and {Products} for {Users} {With} {Disabilities}'
-    short: Constructing {Websites} with {Generative} {AI} {Tools}
-  author:
-  - Palmer, Zsuzsanna B.
-  - Oswal, Sushil K.
-  date: 2025-01
-  page-range: 93-114
-  url:
-    value: https://doi.org/10.1177/10506519241280644
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1177/10506519241280644
-    issn: 1050-6519
-  abstract: Generative AI tools allow anyone without web-design experience to have a business website created when the user provides a few specifications about the business, such as its name, type, and location. But the resulting websites not only fall short of the business's basic needs but they also raise major concerns about their accessibility for disabled users. This study specifically examines whether these AI generated websites are accessible to screen-reader users with visual disabilities. It presents data about the usability and accessibility of the products of three generative AI website builders, highlights the specific problems found by an expert screen reader test along with an automated machine scan of these sites, and discusses some causes of and recommendations for solving these problems.
-  parent:
-    type: periodical
-    title: Journal of Business and Technical Communication
-    publisher: SAGE Publications Inc
-    issue: 1
-    volume: 39
-suh_human_nodate:
-  type: article
-  title: Human or {LLM}? {A} {Comparative} {Study} on {Accessible} {Code} {Generation} {Capability}
-  author:
-  - Suh, Hyunjae
-  - Tafreshipour, Mahan
-  - Malek, Sam
-  - Ahmed, Iftekhar
-  abstract: Web accessibility is essential for inclusive digital experiences, yet the accessibility of LLM-generated code remains underexplored. This paper presents an empirical study comparing the accessibility of web code generated by GPT-4o and Qwen2.5-Coder-32B-InstructAWQ against human-written code. Results show that LLMs often produce more accessible code, especially for basic features like color contrast and alternative text, but struggle with complex issues such as ARIA attributes. We also assess advanced prompting strategies (Zero-Shot, Few-Shot, Self-Criticism), finding they offer some gains but are limited. To address these gaps, we introduce FeedA11y, a feedback-driven ReAct-based approach that significantly outperforms other methods in improving accessibility. Our work highlights the promise of LLMs for accessible code generation and emphasizes the need for feedback-based techniques to address persistent challenges. We provide the source code and datasets that were used in our experiments in the companion website [5].
-  parent:
-    type: periodical
-pillai_website_2022:
-  type: article
-  title: Website {Builders} {Still} {Contribute} {To} {Inaccessible} {Web} {Design}
-  author:
-  - Pillai, Athira
-  - Shinohara, Kristen
-  - Tigwell, Garreth W.
-  date: 2022-10
-  page-range: 1-4
-  url:
-    value: https://dl.acm.org/doi/10.1145/3517428.3550368
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3517428.3550368
-    isbn: 978-1-4503-9258-7
-  abstract: Website builders enable individuals without design or technical skills to create websites. However, it is unclear if modern websites created by website builders meet accessibility standards. We reviewed six popular website building platforms and found a lack of accessibility support. Wix provided the most comprehensive accessibility documentation and robust accessibility features. However, during an accessibility audit of 90 Wix webpages, we found many accessibility issues, raising concerns about how users are supported.
-  parent:
-    type: proceedings
-    title: Proceedings of the 24th {International} {ACM} {SIGACCESS} {Conference} on {Computers} and {Accessibility}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{ASSETS} ''22'
-leedy_accessibility_2025:
-  type: article
-  title:
-    value: 'Accessibility in the {Age} of {Generative} {AI} {Web} {Based} {Builders}: {Evaluating} {Web} {Design} {Tools} for {Inclusive} {Practices}'
-    short: Accessibility in the {Age} of {Generative} {AI} {Web} {Based} {Builders}
-  author:
-  - Leedy, Katelyn
-  - Preston, Makenzie
-  - Feng, Jinjuan
-  - Rezwana, Jeba
-  date: 2025-11
-  page-range: 304-314
-  url:
-    value: https://dl.acm.org/doi/10.1145/3757980.3757989
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3757980.3757989
-    isbn: 979-8-4007-1512-9
-  abstract: As generative AI (GenAI) becomes more widely used in web content creation, assessing the accessibility of AI-generated websites is increasingly important for ensuring inclusive digital experiences. This study evaluates the accessibility performance of two GenAI-based website builders, Wix and Framer, using the Web Content Accessibility Guidelines (WCAG) as a benchmark. Accessibility was assessed using a combination of automated testing with the WAVE evaluation tool and manual inspection by two reviewers. Common issues included missing or vague alternative text, improper heading structures, inaccessible keyboard navigation, and inconsistently labeled interactive elements. While both platforms demonstrated some progress toward accessible design, neither consistently produced content that fully met WCAG 2.1 requirements. However, Wix-generated sites contained fewer accessibility errors and more consistent semantic HTML structure than those produced by Framer. Notably, Wix outperformed Framer according to the manual evaluations, indicating that platform design has a greater impact on accessibility outcomes than user prompts alone. These findings highlight ongoing gaps in current AI-driven website generation tools and underscore the need for better training models, stronger semantic understanding, and real-time accessibility guidance during content creation.
-  parent:
-    type: proceedings
-    title: Proceedings of the 28th {International} {Academic} {Mindtrek} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: Mindtrek '25
-mowar_codea11y_2025:
-  type: article
-  title:
-    value: '{CodeA11y}: {Making} {AI} {Coding} {Assistants} {Useful} for {Accessible} {Web} {Development}'
-    short: '{CodeA11y}'
-  author:
-  - Mowar, Peya
-  - Peng, Yi-Hao
-  - Wu, Jason
-  - Steinfeld, Aaron
-  - Bigham, Jeffrey P
-  date: 2025-04
-  page-range: 1-15
-  url:
-    value: https://dl.acm.org/doi/10.1145/3706598.3713335
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3706598.3713335
-    isbn: 979-8-4007-1394-1
-  abstract: 'A persistent challenge in accessible computing is ensuring developers produce web UI code that supports assistive technologies. Despite numerous specialized accessibility tools, novice developers often remain unaware of them, leading to {~}96% of web pages that contain accessibility violations. AI coding assistants, such as GitHub Copilot, could offer potential by generating accessibility-compliant code, but their impact remains uncertain&nbsp;[52]. Our formative study with 16 developers without accessibility training revealed three key issues in AI-assisted coding: failure to prompt AI for accessibility, omitting crucial manual steps like replacing placeholder attributes, and the inability to verify compliance. To address these issues, we developed CodeA11y, a GitHub Copilot Extension, that suggests accessibility-compliant code and displays manual validation reminders. We evaluated it through a controlled study with another 20 novice developers. Our findings demonstrate its effectiveness in guiding novice developers by reinforcing accessibility practices throughout interactions, representing a significant step towards integrating accessibility into AI coding assistants.'
-  parent:
-    type: proceedings
-    title: Proceedings of the 2025 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{CHI} ''25'
-tankelevitch_metacognitive_2024:
-  type: article
-  title: The {Metacognitive} {Demands} and {Opportunities} of {Generative} {AI}
-  author:
-  - Tankelevitch, Lev
-  - Kewenig, Viktor
-  - Simkute, Auste
-  - Scott, Ava Elizabeth
-  - Sarkar, Advait
-  - Sellen, Abigail
-  - Rintel, Sean
-  date: 2024-05
-  page-range: 1-24
-  url:
-    value: https://dl.acm.org/doi/10.1145/3613904.3642902
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3613904.3642902
-    isbn: 979-8-4007-0330-0
-  abstract: Generative AI (GenAI) systems offer unprecedented opportunities for transforming professional and personal work, yet present challenges around prompting, evaluating and relying on outputs, and optimizing workflows. We argue that metacognition—the psychological ability to monitor and control one’s thoughts and behavior—offers a valuable lens to understand and design for these usability challenges. Drawing on research in psychology and cognitive science, and recent GenAI user studies, we illustrate how GenAI systems impose metacognitive demands on users, requiring a high degree of metacognitive monitoring and control. We propose these demands could be addressed by integrating metacognitive support strategies into GenAI systems, and by designing GenAI systems to reduce their metacognitive demand by targeting explainability and customizability. Metacognition offers a coherent framework for understanding the usability challenges posed by GenAI, and provides novel research and design directions to advance human-AI interaction.
-  parent:
-    type: proceedings
-    title: Proceedings of the 2024 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{CHI} ''24'
-campoverde-molina_artificial_2026:
-  type: article
-  title:
-    value: 'Artificial intelligence in web accessibility: {A} systematic mapping study'
-    short: Artificial intelligence in web accessibility
-  author:
-  - Campoverde-Molina, Milton
-  - Luján-Mora, Sergio
-  date: 2026-03
-  page-range: '104055'
-  url:
-    value: https://linkinghub.elsevier.com/retrieve/pii/S0920548925000844
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1016/j.csi.2025.104055
-    issn: '09205489'
-  abstract: The popularization and new renaissance of artificial intelligence (AI) have inspired the creation of new applications that help developers improve website accessibility that benefits users with and without disabilities. Therefore, this research presents a systematic mapping study (SMS) because AI in web accessibility has been gaining more interest nowadays with the exposure of works that require an SMS to systematize and consolidate the literature. Through a literature review using the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA), 53 studies from ACM Digital Library, IEEE Xplore, Scopus, and Web of Science were identified for inclusion in this review. The main results of this SMS are APIs with AI, web applications and plugins with AI, image and voice recognition with AI, limitations and challenges of AI in web accessibility, correction and testing of web accessibility with AI, automatic correction of web accessibility with AI, web navigation with conversational agents with AI, web and mobile application accessibility with AI, good practices in web accessibility for AI, accessibility of web forms and elements with AI. According to the results, in the studies, alternative texts were created for the images of the websites, AI helped generate accessible HTML code using well-defined prompts, AI tools must comply with Web Content Accessibility Guidelines (WCAG), machine learning was the most used approach, the most used language models were large language models (LLM) and accessibility barrier correction using ChatGPT. The primary contribution of this SMS lies in its analysis of the current state of AI research related to web accessibility and the identification of trends and gaps in this research area. This SMS is intended for researchers, programmers, and software development companies that may use language models, AI tools, or emerging technologies in web accessibility to mitigate website accessibility barriers.
-  parent:
-    type: periodical
-    title: Computer Standards & Interfaces
-    volume: 96
-doush_evaluating_2025:
-  type: article
-  title:
-    value: 'Evaluating {AI}-{Generated} {Web} {Code} for {Accessibility} {Compliance}: {A} {Metric}-{Driven} {Approach}'
-    short: Evaluating {AI}-{Generated} {Web} {Code} for {Accessibility} {Compliance}
-  author:
-  - Doush, Iyad Abu
-  - Kassem, Reem
-  date: 2025-07
-  page-range: 338-344
-  url:
-    value: https://dl.acm.org/doi/10.1145/3696593.3696614
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3696593.3696614
-    isbn: 979-8-4007-0729-2
-  abstract: 'The rapid advancement of generative AI models presents many new opportunities and challenges in the domain of web accessibility. This paper aims to evaluate the accuracy of different generative AI models in producing web codes that adhere to accessibility standards. Two of the most popular AI chatbots, ChatGPT and Microsoft Copilot, were tested to assess their performance. Our methodology involves utilizing a foundational prompt design. To test the models’ functionality, nine different web code examples were chosen. Before testing the chatbot, the ideal codes of the nine examples had to be developed to use them for comparison later. After providing the foundational prompt to the chatbot, the next prompt asks the chatbot to generate the required code. Based on the generated code, a follow-up prompt might be needed to fix any issues in the generated code or to further clarify the requirement. The generated code was evaluated using a comprehensive metric-based approach, ensuring it met the necessary accessibility requirements and usability enhancements. Five different metrics were chosen: correctness and functionality of the code, cross-browser compatibility, the number of prompts needed to produce the required code, the severity of accessibility issues, and conformance to standards, which included testing the code’s compatibility with both the keyboard and screen reader. Our findings reveal significant insights into the capabilities and limitations of generative AI technology in creating accessible web code. The results showed great potential for both chosen chatbots and highlighted the importance of well-crafted prompts. In terms of web accessibility, the chatbots had similar results, however ChatGPT produced clearer webpages that demonstrated the concept in a better way when compared to Copilot.'
-  parent:
-    type: proceedings
-    title: Proceedings of the 11th {International} {Conference} on {Software} {Development} and {Technologies} for {Enhancing} {Accessibility} and {Fighting} {Info}-exclusion
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{DSAI} ''24'
-deng_more_2023:
-  type: article
-  title: A {More} {Accessible} {Web} with {Natural} {Language} {Interface}
-  author: Deng, Xiang
-  date: 2023-04
-  page-range: 153-155
-  url:
-    value: https://dl.acm.org/doi/10.1145/3587281.3587700
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3587281.3587700
-    isbn: 979-8-4007-0748-3
-  abstract: The past decade has witnessed the rapid growth and evolution of the Web. Today, people can perform a multitude of tasks through the use of a single browser. Despite the immense power and capabilities of the Web, its increasing complexity and the overwhelming amount of information pose significant challenges for users to easily access the information they need and achieve their goals. Especially for those who are less technologically proficient or have disabilities. In this work, we propose to tackle this issue by building a general natural language interface for the Web, which enables users to express their needs in natural language and have the system carry out the arduous actions. We examine the key components crucial for building the natural language interface. On top of that, we present our ongoing efforts in curating a new benchmark dataset covering a diverse range of websites and tasks, and establishing baselines to demonstrate the feasibility of building such a system.
-  parent:
-    type: proceedings
-    title: Proceedings of the 20th {International} {Web} for {All} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{W4A} ''23'
-gurita_when_2025:
-  type: article
-  title: When {LLM}-{Generated} {Code} {Perpetuates} {User} {Interface} {Accessibility} {Barriers}, {How} {Can} {We} {Break} the {Cycle}?
-  author:
-  - Gurita, Alexandra-Elena
-  - Vatavu, Radu-Daniel
-  date: 2025-10
-  page-range: 124-134
-  url:
-    value: https://dl.acm.org/doi/10.1145/3744257.3744266
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3744257.3744266
-    isbn: 979-8-4007-1882-3
-  abstract: The integration of Large Language Models (LLMs) into web development workflows has the potential to revolutionize user interface design, yet their ability to produce accessible interfaces still remains underexplored. In this paper, we present an evaluation of LLM-generated user interfaces against the accessibility criteria from the Web Content Accessibility Guidelines (WCAG 2.1), comparing the output of ChatGPT and Claude with two distinct prompt types—accessibility-agnostic and accessibility-oriented. Our evaluation approach, consisting of automated testing, expert evaluation, and LLM self-reflection, reveals that accessibility-oriented prompts increase success counts and reduce violation rates in WCAG criteria, but persistent barriers remain, particularly in semantic structure. We argue that advancing accessible user interface development through LLM-generated code requires not just enhanced prompting but deeper semantic understanding and context awareness in these systems. We use our findings to suggest future work opportunities on the development of next-generation LLM-based accessibility tools as well as practical implications for designers.
-  parent:
-    type: proceedings
-    title: Proceedings of the 22nd {International} {Web} for {All} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{W4A} ''25'
-calo_measuring_2026:
-  type: article
-  title: Measuring the {Semantic} {Accessibility} {Gap} in {LLM}-{Generated} {Web} {UIs}
-  author:
-  - Calò, Tommaso
-  - Gurita, Alexandra-Elena
-  - De Russis, Luigi
-  date: 2026-04
-  page-range: 1-5
-  url:
-    value: https://dl.acm.org/doi/10.1145/3772363.3799364
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3772363.3799364
-    isbn: 979-8-4007-2281-3
-  abstract: Large Language Models are increasingly used to generate web interfaces from natural language specifications. Automated accessibility tools evaluate these interfaces by detecting syntactic violations such as missing attributes, but cannot assess whether accessibility content is actually meaningful—an image with alt=“image” passes every check yet conveys nothing to screen reader users. We investigate the prevalence of such semantic accessibility violations in LLM-generated interfaces. Analyzing 300 UIs produced by three commercial models, we identify 541 semantic violations across six fault types. We validate an LLM-as-judge approach through controlled fault injection, achieving recall rates of 80–92%, and triangulate with a preliminary human annotation study. Our findings suggest that LLM judges can extend accessibility evaluation into the semantic dimension that automated tools miss, opening opportunities for their integration as reward signals in accessibility-aware development workflows.
-  parent:
-    type: proceedings
-    title: Proceedings of the {Extended} {Abstracts} of the 2026 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{CHI} {EA} ''26'
-conversational_ai:
-  type: article
-  title: 'Conversational AI for Accessible Website Design: Integrating LLM Assistants in Website Builders'
-  author:
-  - Oswal, S. K.
-  - Oswal, H. K.
-  date: 2025-04-10
-  editor:
-  - Goodman-Deane, Joy
-  - Zitkus, Emilene
-  - Brock, Anke
-  - Clarkson, John
-  - Dong, Hua
-  - Heylighen, Ann
-  - Lazar, Jonathan
-  page-range: 251-261
-  url:
-    value: https://doi.org/10.1007/978-3-031-84681-6_22
-  serial-number:
-    isbn: 978-3-031-84681-6
-  abstract: This paper addresses the accessibility challenges of AI website builders for blind and low vision (BLV) users, focusing on how current tools fail to meet Web Content Accessibility Guidelines. We conducted expert user testing of three popular AI website builders—Dorik, Relume, and Wix—with a screen reader, finding significant accessibility barriers for BLV users. To mitigate these shortcomings, we propose integrating large language models (LLM) as AI assistants in website builders. These AI assistants would work collaboratively with BLV users to describe visual elements, assist in layout decisions, and perform actions that are currently inaccessible due to their reliance on mouse interactions. The contributions of this paper include a critique of current AI website builders, the concept of an assistant-based LLM model for improving the accessibility of builder platforms, and an explanation of an LLM-supported workflow for BLV users to design websites. Besides benefiting BLV website builder users, our design concept would enhance the overall accessibility of AI-generated websites.
-  parent:
-    type: proceedings
-    title: New Frontiers for Inclusion
-    publisher:
-      name: Springer Nature Switzerland
-      location: Cham
-
-baldiris_evaluation_2023:
-  type: article
-  title: Evaluation of authoring tools under {ATAG} and {WCAG} recommendations
-  author:
-  - Baldiris, Silvia
-  - Vargas, David
-  - Garzón, Juan
-  - Ávila-Garzón, Cecilia
-  - Burgos, Daniel
-  date: 2023-08
-  page-range: 919-930
-  url:
-    value: https://doi.org/10.1007/s10209-022-00904-9
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1007/s10209-022-00904-9
-    issn: 1615-5297
-  abstract: Authoring tools are software programs that allow users to create learning content, lessons, and courses, usually to be used in virtual learning environments. These tools are a reasonable choice for novice users, as they use pre-programmed elements and do not require specific programming skills. However, they do not always meet accessibility guidelines, nor do they ensure that the educational content generated through them is accessible. This study first evaluates the accessibility of four popular free open-source authoring tools based on the ATAG recommendations. Then it evaluates the accessibility of the educational content generated through them based on the WCAG recommendations. These evaluations allow us to identify the level of accessibility of the authoring tools and their potential to help people with disabilities to become not only consumers but also producers of accessible educational content. We conclude that, while much work remains to be done to ensure accessibility, authoring tools are a potential key to effective social inclusion. Based on the findings of this study, we establish a set of recommendations for stakeholders to help close some gaps regarding accessibility.
-  parent:
-    type: periodical
-    title: Universal Access in the Information Society
-    issue: 3
-    volume: 22
-
-huh_designchecker_2024:
-  type: article
-  title:
-    value: '{DesignChecker}: {Visual} {Design} {Support} for {Blind} and {Low} {Vision} {Web} {Developers}'
-    short: '{DesignChecker}'
-  author:
-  - Huh, Mina
-  - Pavel, Amy
-  date: 2024-10
-  page-range: 1-19
-  url:
-    value: https://dl.acm.org/doi/10.1145/3654777.3676369
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3654777.3676369
-    isbn: 979-8-4007-0628-8
-  abstract: Blind and low vision (BLV) developers create websites to share knowledge and showcase their work. A well-designed website can engage audiences and deliver information effectively, yet it remains challenging for BLV developers to review their web designs. We conducted interviews with BLV developers (N=9) and analyzed 20 websites created by BLV developers. BLV developers created highly accessible websites but wanted to assess the usability of their websites for sighted users and follow the design standards of other websites. They also encountered challenges using screen readers to identify illegible text, misaligned elements, and inharmonious colors. We present DesignChecker, a browser extension that helps BLV developers improve their web designs. With DesignChecker, users can assess their current design by comparing it to visual design guidelines, a reference website of their choice, or a set of similar websites. DesignChecker also identifies the specific HTML elements that violate design guidelines and suggests CSS changes for improvements. Our user study participants (N=8) recognized more visual design errors than using their typical workflow and expressed enthusiasm about using DesignChecker in the future.
-  parent:
-    type: proceedings
-    title: Proceedings of the 37th {Annual} {ACM} {Symposium} on {User} {Interface} {Software} and {Technology}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{UIST} ''24'
-gurita_understanding_2025:
-  type: article
-  title: Understanding and {Improving} {Accessibility} in {AI}-{Generated} {Interfaces} through {Interactive} {Prompt} {Engineering} {Methods}
-  author: Gurita, Alexandra-Elena
-  date: 2025-03
-  page-range: 101-104
-  url:
-    value: https://dl.acm.org/doi/10.1145/3708557.3716347
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3708557.3716347
-    isbn: 979-8-4007-1409-2
-  abstract: 'As interface designers increasingly adopt AI-powered design tools, ensuring accessibility compliance presents unique challenges for human-AI collaboration. Through a mixed-methods study combining systematic evaluation of 200 generated interfaces across five AI design tools and interviews with six professional designers with extensive accessibility experience, we investigated patterns in designer-AI collaboration for accessible interface design. While 72% of interfaces exhibited accessibility violations, these were relatively minor (M = 1.2, SD = 0.4). Our analysis revealed distinct interaction patterns between designers and AI tools: iterative refinement (42% of cases) where designers progressively improved accessibility through dialogue, requirement prioritization between accessibility compliance and visual design, design consistency during targeted modifications. Component-level iterations had a median of 3 rounds, with average values suggesting similar behavior (M = 3.2, SD = 0.8), each targeting specific accessibility issues. Notably, the difference between control and accessibility-oriented prompts was minimal (Δ = 0.2), suggesting that successful accessibility implementation requires active designer engagement beyond initial prompting. We contribute empirical insights into designer-AI dialogue patterns and provide implications for developing more effective accessibility-focused AI design tools.'
-  parent:
-    type: proceedings
-    title: Companion {Proceedings} of the 30th {International} {Conference} on {Intelligent} {User} {Interfaces}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{IUI} ''25 {Companion}'
-gurita_exploring_2025:
-  type: article
-  title:
-    value: 'Exploring the {Intersection} of {UI} {Accessibility} and {Generative} {AI}: {A} {Framework} for {Human}-{AI} {Collaboration}'
-    short: Exploring the {Intersection} of {UI} {Accessibility} and {Generative} {AI}
-  author: Guriță, Alexandra-Elena
-  date: 2025-07
-  page-range: 116-120
-  url:
-    value: https://dl.acm.org/doi/10.1145/3715668.3735617
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3715668.3735617
-    isbn: 979-8-4007-1486-3
-  abstract: Despite decades of accessibility guidelines, digital interfaces remain largely inaccessible, with over 95% of websites failing basic WCAG standards. My doctoral research examines how generative AI transforms accessibility implementation by investigating how Al-driven tools comply with accessibility standards, what patterns emerge in human-AI collaboration for accessible design, and how we can develop frameworks to guide AI systems toward more accessible outcomes. Through mixed-method studies-evaluating Al- generated interfaces, challenging Al's understanding of accessibility principles, and interviewing professional designers I've identified key compliance patterns, discovered AI limitations, and developed novel interactive prompt engineering methods. This work contributes both theoretical understanding of human-AI collaboration and practical frameworks for integrating generative AI into accessible interface design workflows.
-  parent:
-    type: proceedings
-    title: Companion {Publication} of the 2025 {ACM} {Designing} {Interactive} {Systems} {Conference}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{DIS} ''25 {Companion}'
-gurita_breaking_2025:
-  type: article
-  title:
-    value: 'Breaking {Bad} ({Design}): {Challenging} {AI} {User} {Interface} {Accessibility} {Guardrails}'
-    short: Breaking {Bad} ({Design})
-  author:
-  - Gurita, Alexandra-Elena
-  - Vatavu, Radu-Daniel
-  date: 2025-04
-  page-range: 1-7
-  url:
-    value: https://dl.acm.org/doi/10.1145/3706599.3716220
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3706599.3716220
-    isbn: 979-8-4007-1395-8
-  abstract: 'What happens when we prompt AI to create “bad” design? To find out, we challenged four AI-driven design tools to create user interfaces that explicitly violate established accessibility criteria, only to discover them as prisoners of their usability-oriented training. This finding raises a critical question: How can we develop AI that understands accessibility deeply enough to know when to comply and when to thoughtfully challenge established design principles? Through systematic attempts to subvert AI tools and make them follow our request, we found them both rigid and limited: capable of reproducing accessible patterns, but incapable of thoughtful deviation when context demanded it. By adopting the lens of intentional inaccessibility as an investigation method, we raise questions about the nature of design intelligence that demand reconsideration of how design knowledge is integrated into AI-driven design tools.'
-  parent:
-    type: proceedings
-    title: Proceedings of the {Extended} {Abstracts} of the {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{CHI} {EA} ''25'
-gurita_insights_2025:
-  type: article
-  title: Insights and {Implications} of {Evaluating} {Accessibility} {Compliance} in {AI}-{Generated} {Web} {Interfaces}
-  author:
-  - Guriță, Alexandra-Elena
-  - Vatavu, Radu-Daniel
-  date: 2025-05
-  page-range: 996-1000
-  url:
-    value: https://dl.acm.org/doi/10.1145/3701716.3715552
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3701716.3715552
-    isbn: 979-8-4007-1331-6
-  abstract: The recent availability of AI-driven user interface generation tools necessitates a proper understanding of their capabilities to produce accessible designs in accordance to established standards. To this end, this paper reports results from an evaluation of fifty user interfaces, generated using five publicly available AI design tools, against WCAG 2.1 criteria (e.g., text contrast and target size), comparing both accessibility-agnostic and accessibility-oriented text prompts. Our analysis reveals moderate violation severity (M=0.47) on a scale from 0, none to 4, critical), with text contrast (M=1.08) and target size (M=0.86) emerging as primary yet fixable violations. Contrary to our expectations, the accessibility-oriented prompt did not improve compliance in our dataset, but actually reduced it (M=0.54 vs. M=0.39). However, three of the examined AI tools showed improved results through dialogue and iterative refinement.
-  parent:
-    type: proceedings
-    title: Companion {Proceedings} of the {ACM} on {Web} {Conference} 2025
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{WWW} ''25'
-noauthor_ai-generated_2026:
+    value: https://dl.acm.org/doi/10.1145/3677846.3677854
+atag-2025-12-05:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2025-12-05
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_Dec05_2025.html
+atag-2026-05-08:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2026-05-08
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_May08_2026.html
+atag-2026-05-22:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2026-05-22
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_May22_2026.html
+atag-2026-06-19:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2026-06-19
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_Jun19_2026.html
+atag-2026-07-31:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2026-07-31
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_Jul31_2026.html
+atag-2026-08-07:
+  author: Authoring Tool Accessibility Guidelines CG
+  date: 2026-08-07
+  title: Authoring Tool Accessibility Guidelines CG Meeting Minutes
+  type: report
+  url: https://w3c-cg.github.io/atag/minutes/minutes_Aug07_2026.html
+atag:
+  author: World Wide Web Consortion
+  date: 2015-09-24
+  title: Authoring {Tool} {Accessibility} {Guidelines} ({ATAG}) 2.0
   type: misc
-  title: '{AI}-{Generated} {UI} {Is} {Inaccessible} by {Default} – {Frontend} {Masters} {Blog}'
-  date: 2026-04
   url:
-    value: https://frontendmasters.com/blog/ai-generated-ui-is-inaccessible-by-default/
-    date: 2026-05-21
-  abstract: It doesn't mean you can't get AI to help with accessible code, you've just got to know what you're doing.
-roig_authoring_2023:
-  type: article
-  title:
-    value: 'Authoring tools are critical to the accessibility of the documents: {Recommendations} for word processors, including interaction design'
-    short: Authoring tools are critical to the accessibility of the documents
-  author:
-  - Roig, Jordi
-  - Ribera, Mireia
-  - Alcaraz, Rubén
-  date: 2023-05
-  page-range: 160-165
-  url:
-    value: https://dl.acm.org/doi/10.1145/3563137.3563153
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/3563137.3563153
-    isbn: 978-1-4503-9807-7
-  abstract: Of all the digital documents that are published daily, only part of them are accessible to people with disabilities or temporary or situational disabilities or functional diversity. This contravenes the growing interest and legal pressure to produce accessible content. Three agents are involved in the production of a digital document; the digital format of the document, the authoring tool that creates the content according to the potential of said format and, finally, the author of the document. The most widespread digital formats (ODF, PDF/UA or HTML) offer the elements to potentially create documents with a high degree of accessibility, and therefore the attention should be directed to the authoring tools and the authors of the documents. The latter should be accounted for relevant elements in accessibility as the use of plain language or clarity in the presentation; however, authoring tools are primarily responsible for producing accessible documents. ATAG provides recommendations for authoring tools, but they are general (they apply to all authoring tools) and do not include any interaction requirements. This study proposes 15 recommendations that could provide a second level of depth in the requirements of authoring tools customized to word processors and that also include recommendations on the interaction design. To do this, the article classifies the different items that can be found in textual documents, starting from books as a superset of any textual document; subsequently, it describes the main barriers users face according to their functional diversity. The final result, based on the classification of the elements and the different ways of accessing the content, are 15 recommendations for textual documents authoring tools.
-  parent:
-    type: proceedings
-    title: Proceedings of the 10th {International} {Conference} on {Software} {Development} and {Technologies} for {Enhancing} {Accessibility} and {Fighting} {Info}-exclusion
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: '{DSAI} ''22'
-roig_creation_2015:
-  type: article
-  title:
-    value: 'Creation of accessible {EPUB} documents by non-technical users: a long way to go'
-    short: Creation of accessible {EPUB} documents by non-technical users
-  author:
-  - Roig, Jordi
-  - Ribera, Mireia
-  date: 2015-09
-  page-range: 1-2
-  url:
-    value: https://dl.acm.org/doi/10.1145/2829875.2829926
-    date: 2026-05-21
-  serial-number:
-    doi: 10.1145/2829875.2829926
-    isbn: 978-1-4503-3463-1
-  abstract: This paper presents a quantitative evaluation of the conversion results from office documents to the EPUB format. As a general conclusion, the results of the conversions do not meet the standards nor preserve the accessibility information. Furthermore, tools are overdue in adopting the format EPUB3.
-  parent:
-    type: proceedings
-    title: Proceedings of the {XVI} {International} {Conference} on {Human} {Computer} {Interaction}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
-    parent:
-      type: proceedings
-      title: Interacci&#xf3;n '15
+    date: 2026-04-18
+    value: https://www.w3.org/TR/ATAG20/
 baldiris_accessibility_2019:
-  type: article
-  title: Accessibility {Evaluation} of {Web} {Content} that {Support} the {Mathematics}, {Geometry} and {Physics}'s {Teaching} {And} {Learning}
+  abstract: The use of ICT in the classroom has allowed new teaching strategies, including the use of interactive software. However, during the design and implementation of this type of software, existing standards or recommendations for the creation of accessible Web content are not taken into account. This is why the accessibility in Web content, specifically in educational context, has been the subject of much discussion regarding the need to make Web educational content accessible to all students, regardless of their abilities or disabilities. The present study makes a literature review to identify those Authoring Tools that are being used by teachers in the areas of exact sciences, emphasizing mathematics, physics and geometry. Subsequently, the Web content generated by the identified Authoring Tools is evaluated in compliance with WCAG 2.1 recommendations, with the purpose of enunciating some conclusions and next issues to research.
   author:
-  - Baldiris, Silvia
-  - Mancera, Laura
-  - Vargas, David
-  - Velez, Gloria
+    - Baldiris, Silvia
+    - Mancera, Laura
+    - Vargas, David
+    - Velez, Gloria
   date: 2019-07
+  note: 'ISSN: 2161-377X'
   page-range: 295-297
-  url:
-    value: https://ieeexplore.ieee.org/document/8820835
-    date: 2026-05-21
+  parent:
+    title: 2019 {IEEE} 19th {International} {Conference} on {Advanced} {Learning} {Technologies} ({ICALT})
+    type: proceedings
+    volume: 2161–377X
   serial-number:
     doi: 10.1109/ICALT.2019.00094
     issn: 2161-377X
-  note: 'ISSN: 2161-377X'
-  abstract: The use of ICT in the classroom has allowed new teaching strategies, including the use of interactive software. However, during the design and implementation of this type of software, existing standards or recommendations for the creation of accessible Web content are not taken into account. This is why the accessibility in Web content, specifically in educational context, has been the subject of much discussion regarding the need to make Web educational content accessible to all students, regardless of their abilities or disabilities. The present study makes a literature review to identify those Authoring Tools that are being used by teachers in the areas of exact sciences, emphasizing mathematics, physics and geometry. Subsequently, the Web content generated by the identified Authoring Tools is evaluated in compliance with WCAG 2.1 recommendations, with the purpose of enunciating some conclusions and next issues to research.
-  parent:
-    type: proceedings
-    title: 2019 {IEEE} 19th {International} {Conference} on {Advanced} {Learning} {Technologies} ({ICALT})
-    volume: 2161–377X
-flores-saviaga_impact_2025:
+  title: Accessibility {Evaluation} of {Web} {Content} that {Support} the {Mathematics}, {Geometry} and {Physics}'s {Teaching} {And} {Learning}
   type: article
-  title: The {Impact} of {Generative} {AI} {Coding} {Assistants} on {Developers} {Who} {Are} {Visually} {Impaired}
+  url:
+    date: 2026-05-21
+    value: https://ieeexplore.ieee.org/document/8820835
+baldiris_evaluation_2023:
+  abstract: Authoring tools are software programs that allow users to create learning content, lessons, and courses, usually to be used in virtual learning environments. These tools are a reasonable choice for novice users, as they use pre-programmed elements and do not require specific programming skills. However, they do not always meet accessibility guidelines, nor do they ensure that the educational content generated through them is accessible. This study first evaluates the accessibility of four popular free open-source authoring tools based on the ATAG recommendations. Then it evaluates the accessibility of the educational content generated through them based on the WCAG recommendations. These evaluations allow us to identify the level of accessibility of the authoring tools and their potential to help people with disabilities to become not only consumers but also producers of accessible educational content. We conclude that, while much work remains to be done to ensure accessibility, authoring tools are a potential key to effective social inclusion. Based on the findings of this study, we establish a set of recommendations for stakeholders to help close some gaps regarding accessibility.
   author:
-  - Flores-Saviaga, Claudia
-  - Hanrahan, Benjamin V.
-  - Imteyaz, Kashif
-  - Clarke, Steven
-  - Savage*, Saiph
+    - Baldiris, Silvia
+    - Vargas, David
+    - Garzón, Juan
+    - Ávila-Garzón, Cecilia
+    - Burgos, Daniel
+  date: 2023-08
+  page-range: 919-930
+  parent:
+    issue: 3
+    title: Universal Access in the Information Society
+    type: periodical
+    volume: 22
+  serial-number:
+    doi: 10.1007/s10209-022-00904-9
+    issn: 1615-5297
+  title: Evaluation of authoring tools under {ATAG} and {WCAG} recommendations
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://doi.org/10.1007/s10209-022-00904-9
+calo_measuring_2026:
+  abstract: Large Language Models are increasingly used to generate web interfaces from natural language specifications. Automated accessibility tools evaluate these interfaces by detecting syntactic violations such as missing attributes, but cannot assess whether accessibility content is actually meaningful—an image with alt=“image” passes every check yet conveys nothing to screen reader users. We investigate the prevalence of such semantic accessibility violations in LLM-generated interfaces. Analyzing 300 UIs produced by three commercial models, we identify 541 semantic violations across six fault types. We validate an LLM-as-judge approach through controlled fault injection, achieving recall rates of 80–92%, and triangulate with a preliminary human annotation study. Our findings suggest that LLM judges can extend accessibility evaluation into the semantic dimension that automated tools miss, opening opportunities for their integration as reward signals in accessibility-aware development workflows.
+  author:
+    - Calò, Tommaso
+    - Gurita, Alexandra-Elena
+    - De Russis, Luigi
+  date: 2026-04
+  page-range: 1-5
+  parent:
+    parent:
+      title: "{CHI} {EA} '26"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the {Extended} {Abstracts} of the 2026 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3772363.3799364
+    isbn: 979-8-4007-2281-3
+  title: Measuring the {Semantic} {Accessibility} {Gap} in {LLM}-{Generated} {Web} {UIs}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3772363.3799364
+campoverde-molina_artificial_2026:
+  abstract: The popularization and new renaissance of artificial intelligence (AI) have inspired the creation of new applications that help developers improve website accessibility that benefits users with and without disabilities. Therefore, this research presents a systematic mapping study (SMS) because AI in web accessibility has been gaining more interest nowadays with the exposure of works that require an SMS to systematize and consolidate the literature. Through a literature review using the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA), 53 studies from ACM Digital Library, IEEE Xplore, Scopus, and Web of Science were identified for inclusion in this review. The main results of this SMS are APIs with AI, web applications and plugins with AI, image and voice recognition with AI, limitations and challenges of AI in web accessibility, correction and testing of web accessibility with AI, automatic correction of web accessibility with AI, web navigation with conversational agents with AI, web and mobile application accessibility with AI, good practices in web accessibility for AI, accessibility of web forms and elements with AI. According to the results, in the studies, alternative texts were created for the images of the websites, AI helped generate accessible HTML code using well-defined prompts, AI tools must comply with Web Content Accessibility Guidelines (WCAG), machine learning was the most used approach, the most used language models were large language models (LLM) and accessibility barrier correction using ChatGPT. The primary contribution of this SMS lies in its analysis of the current state of AI research related to web accessibility and the identification of trends and gaps in this research area. This SMS is intended for researchers, programmers, and software development companies that may use language models, AI tools, or emerging technologies in web accessibility to mitigate website accessibility barriers.
+  author:
+    - Campoverde-Molina, Milton
+    - Luján-Mora, Sergio
+  date: 2026-03
+  page-range: '104055'
+  parent:
+    title: Computer Standards & Interfaces
+    type: periodical
+    volume: 96
+  serial-number:
+    doi: 10.1016/j.csi.2025.104055
+    issn: '09205489'
+  title:
+    short: Artificial intelligence in web accessibility
+    value: 'Artificial intelligence in web accessibility: {A} systematic mapping study'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://linkinghub.elsevier.com/retrieve/pii/S0920548925000844
+canasc:
+  author: Accessibility Standards Canada
+  date: 2024-05
+  title: '{CAN}/{ASC} - {EN} 301 549:2024 {Accessibility} requirements for {ICT} products and services ({EN} 301 549:2021, {IDT})'
+  type: misc
+  url:
+    date: 2026-05-21
+    value: https://accessible.canada.ca/creating-accessibility-standards/canasc-en-301-5492024-accessibility-requirements-ict-products-and-services
+chen_screen_2025:
+  abstract: Generative AI agents are reshaping human-computer interaction, shifting users from direct task execution to supervising machine-driven actions, especially the rise of "vibe coding" in programming. Yet little is known about how screen reader programmers interact with AI code assistants in practice. We conducted a longitudinal study with 16 blind and low-vision programmers. Participants completed a GitHub Copilot tutorial, engaged with a programming task, and provided initial feedback. After two weeks of AI-assisted programming, follow-ups examined how their practices and perceptions evolved. Our findings show that code assistants enhanced programming efficiency and bridged accessibility gaps. However, participants struggled to convey intent, interpret AI outputs, and manage multiple views while maintaining situational awareness. They showed diverse preferences for accessibility features, expressed a need to balance automation with control, and encountered barriers when learning to use these tools. Furthermore, we propose design principles and recommendations for more accessible and inclusive human-AI collaborations.
+  author:
+    - Chen, Nan
+    - Qiu, Luna K.
+    - Wang, Arran Zeyu
+    - Wang, Zilong
+    - Yang, Yuqing
+  date: 2025-12
+  note: arXiv:2506.13270 [cs.HC]
+  publisher: arXiv
+  serial-number:
+    doi: 10.48550/arXiv.2506.13270
+  title:
+    short: Screen {Reader} {Programmers} in the {Vibe} {Coding} {Era}
+    value: 'Screen {Reader} {Programmers} in the {Vibe} {Coding} {Era}: {Adaptation}, {Empowerment}, and {New} {Accessibility} {Landscape}'
+  type: misc
+  url:
+    date: 2026-05-20
+    value: http://arxiv.org/abs/2506.13270
+conversational_ai:
+  abstract: This paper addresses the accessibility challenges of AI website builders for blind and low vision (BLV) users, focusing on how current tools fail to meet Web Content Accessibility Guidelines. We conducted expert user testing of three popular AI website builders—Dorik, Relume, and Wix—with a screen reader, finding significant accessibility barriers for BLV users. To mitigate these shortcomings, we propose integrating large language models (LLM) as AI assistants in website builders. These AI assistants would work collaboratively with BLV users to describe visual elements, assist in layout decisions, and perform actions that are currently inaccessible due to their reliance on mouse interactions. The contributions of this paper include a critique of current AI website builders, the concept of an assistant-based LLM model for improving the accessibility of builder platforms, and an explanation of an LLM-supported workflow for BLV users to design websites. Besides benefiting BLV website builder users, our design concept would enhance the overall accessibility of AI-generated websites.
+  author:
+    - Oswal, S. K.
+    - Oswal, H. K.
+  date: 2025-04-10
+  editor:
+    - Goodman-Deane, Joy
+    - Zitkus, Emilene
+    - Brock, Anke
+    - Clarkson, John
+    - Dong, Hua
+    - Heylighen, Ann
+    - Lazar, Jonathan
+  page-range: 251-261
+  parent:
+    publisher:
+      location: Cham
+      name: Springer Nature Switzerland
+    title: New Frontiers for Inclusion
+    type: proceedings
+  serial-number:
+    isbn: 978-3-031-84681-6
+  title: 'Conversational AI for Accessible Website Design: Integrating LLM Assistants in Website Builders'
+  type: article
+  url:
+    value: https://doi.org/10.1007/978-3-031-84681-6_22
+deng_more_2023:
+  abstract: The past decade has witnessed the rapid growth and evolution of the Web. Today, people can perform a multitude of tasks through the use of a single browser. Despite the immense power and capabilities of the Web, its increasing complexity and the overwhelming amount of information pose significant challenges for users to easily access the information they need and achieve their goals. Especially for those who are less technologically proficient or have disabilities. In this work, we propose to tackle this issue by building a general natural language interface for the Web, which enables users to express their needs in natural language and have the system carry out the arduous actions. We examine the key components crucial for building the natural language interface. On top of that, we present our ongoing efforts in curating a new benchmark dataset covering a diverse range of websites and tasks, and establishing baselines to demonstrate the feasibility of building such a system.
+  author: Deng, Xiang
+  date: 2023-04
+  page-range: 153-155
+  parent:
+    parent:
+      title: "{W4A} '23"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 20th {International} {Web} for {All} {Conference}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3587281.3587700
+    isbn: 979-8-4007-0748-3
+  title: A {More} {Accessible} {Web} with {Natural} {Language} {Interface}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3587281.3587700
+doush_evaluating_2025:
+  abstract: 'The rapid advancement of generative AI models presents many new opportunities and challenges in the domain of web accessibility. This paper aims to evaluate the accuracy of different generative AI models in producing web codes that adhere to accessibility standards. Two of the most popular AI chatbots, ChatGPT and Microsoft Copilot, were tested to assess their performance. Our methodology involves utilizing a foundational prompt design. To test the models’ functionality, nine different web code examples were chosen. Before testing the chatbot, the ideal codes of the nine examples had to be developed to use them for comparison later. After providing the foundational prompt to the chatbot, the next prompt asks the chatbot to generate the required code. Based on the generated code, a follow-up prompt might be needed to fix any issues in the generated code or to further clarify the requirement. The generated code was evaluated using a comprehensive metric-based approach, ensuring it met the necessary accessibility requirements and usability enhancements. Five different metrics were chosen: correctness and functionality of the code, cross-browser compatibility, the number of prompts needed to produce the required code, the severity of accessibility issues, and conformance to standards, which included testing the code’s compatibility with both the keyboard and screen reader. Our findings reveal significant insights into the capabilities and limitations of generative AI technology in creating accessible web code. The results showed great potential for both chosen chatbots and highlighted the importance of well-crafted prompts. In terms of web accessibility, the chatbots had similar results, however ChatGPT produced clearer webpages that demonstrated the concept in a better way when compared to Copilot.'
+  author:
+    - Doush, Iyad Abu
+    - Kassem, Reem
+  date: 2025-07
+  page-range: 338-344
+  parent:
+    parent:
+      title: "{DSAI} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 11th {International} {Conference} on {Software} {Development} and {Technologies} for {Enhancing} {Accessibility} and {Fighting} {Info}-exclusion
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3696593.3696614
+    isbn: 979-8-4007-0729-2
+  title:
+    short: Evaluating {AI}-{Generated} {Web} {Code} for {Accessibility} {Compliance}
+    value: 'Evaluating {AI}-{Generated} {Web} {Code} for {Accessibility} {Compliance}: {A} {Metric}-{Driven} {Approach}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3696593.3696614
+flores-saviaga_impact_2025:
+  abstract: The rapid adoption of generative AI in software development has impacted the industry, yet its effects on developers with visual impairments remain largely unexplored. To address this gap, we used an Activity Theory framework to examine how developers with visual impairments interact with AI coding assistants. For this purpose, we conducted a study where developers who are visually impaired completed a series of programming tasks using a generative AI coding assistant. We uncovered that, while participants found the AI assistant beneficial and reported significant advantages, they also highlighted accessibility challenges. Specifically, the AI coding assistant often exacerbated existing accessibility barriers and introduced new challenges. For example, it overwhelmed users with an excessive number of suggestions, leading developers who are visually impaired to express a desire for “AI timeouts.” Additionally, the generative AI coding assistant made it more difficult for developers to switch contexts between the AI-generated content and their own code. Despite these challenges, participants were optimistic about the potential of AI coding assistants to transform the coding experience for developers with visual impairments. Our findings emphasize the need to apply activity-centered design principles to generative AI assistants, ensuring they better align with user behaviors and address specific accessibility needs. This approach can enable the assistants to provide more intuitive, inclusive, and effective experiences, while also contributing to the broader goal of enhancing accessibility in software development.
+  author:
+    - Flores-Saviaga, Claudia
+    - Hanrahan, Benjamin V.
+    - Imteyaz, Kashif
+    - Clarke, Steven
+    - Savage*, Saiph
   date: 2025-04
   page-range: 1-17
-  url:
-    value: https://dl.acm.org/doi/10.1145/3706598.3714008
-    date: 2026-05-21
+  parent:
+    parent:
+      title: "{CHI} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 2025 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
+    type: proceedings
   serial-number:
     doi: 10.1145/3706598.3714008
     isbn: 979-8-4007-1394-1
-  abstract: The rapid adoption of generative AI in software development has impacted the industry, yet its effects on developers with visual impairments remain largely unexplored. To address this gap, we used an Activity Theory framework to examine how developers with visual impairments interact with AI coding assistants. For this purpose, we conducted a study where developers who are visually impaired completed a series of programming tasks using a generative AI coding assistant. We uncovered that, while participants found the AI assistant beneficial and reported significant advantages, they also highlighted accessibility challenges. Specifically, the AI coding assistant often exacerbated existing accessibility barriers and introduced new challenges. For example, it overwhelmed users with an excessive number of suggestions, leading developers who are visually impaired to express a desire for “AI timeouts.” Additionally, the generative AI coding assistant made it more difficult for developers to switch contexts between the AI-generated content and their own code. Despite these challenges, participants were optimistic about the potential of AI coding assistants to transform the coding experience for developers with visual impairments. Our findings emphasize the need to apply activity-centered design principles to generative AI assistants, ensuring they better align with user behaviors and address specific accessibility needs. This approach can enable the assistants to provide more intuitive, inclusive, and effective experiences, while also contributing to the broader goal of enhancing accessibility in software development.
+  title: The {Impact} of {Generative} {AI} {Coding} {Assistants} on {Developers} {Who} {Are} {Visually} {Impaired}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3706598.3714008
+gurita_breaking_2025:
+  abstract: 'What happens when we prompt AI to create “bad” design? To find out, we challenged four AI-driven design tools to create user interfaces that explicitly violate established accessibility criteria, only to discover them as prisoners of their usability-oriented training. This finding raises a critical question: How can we develop AI that understands accessibility deeply enough to know when to comply and when to thoughtfully challenge established design principles? Through systematic attempts to subvert AI tools and make them follow our request, we found them both rigid and limited: capable of reproducing accessible patterns, but incapable of thoughtful deviation when context demanded it. By adopting the lens of intentional inaccessibility as an investigation method, we raise questions about the nature of design intelligence that demand reconsideration of how design knowledge is integrated into AI-driven design tools.'
+  author:
+    - Gurita, Alexandra-Elena
+    - Vatavu, Radu-Daniel
+  date: 2025-04
+  page-range: 1-7
   parent:
-    type: proceedings
-    title: Proceedings of the 2025 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
-    publisher:
-      name: Association for Computing Machinery
-      location: New York, NY, USA
     parent:
+      title: "{CHI} {EA} '25"
       type: proceedings
-      title: '{CHI} ''25'
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the {Extended} {Abstracts} of the {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3706599.3716220
+    isbn: 979-8-4007-1395-8
+  title:
+    short: Breaking {Bad} ({Design})
+    value: 'Breaking {Bad} ({Design}): {Challenging} {AI} {User} {Interface} {Accessibility} {Guardrails}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3706599.3716220
+gurita_exploring_2025:
+  abstract: Despite decades of accessibility guidelines, digital interfaces remain largely inaccessible, with over 95% of websites failing basic WCAG standards. My doctoral research examines how generative AI transforms accessibility implementation by investigating how Al-driven tools comply with accessibility standards, what patterns emerge in human-AI collaboration for accessible design, and how we can develop frameworks to guide AI systems toward more accessible outcomes. Through mixed-method studies-evaluating Al- generated interfaces, challenging Al's understanding of accessibility principles, and interviewing professional designers I've identified key compliance patterns, discovered AI limitations, and developed novel interactive prompt engineering methods. This work contributes both theoretical understanding of human-AI collaboration and practical frameworks for integrating generative AI into accessible interface design workflows.
+  author: Guriță, Alexandra-Elena
+  date: 2025-07
+  page-range: 116-120
+  parent:
+    parent:
+      title: "{DIS} '25 {Companion}"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Companion {Publication} of the 2025 {ACM} {Designing} {Interactive} {Systems} {Conference}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3715668.3735617
+    isbn: 979-8-4007-1486-3
+  title:
+    short: Exploring the {Intersection} of {UI} {Accessibility} and {Generative} {AI}
+    value: 'Exploring the {Intersection} of {UI} {Accessibility} and {Generative} {AI}: {A} {Framework} for {Human}-{AI} {Collaboration}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3715668.3735617
+gurita_insights_2025:
+  abstract: The recent availability of AI-driven user interface generation tools necessitates a proper understanding of their capabilities to produce accessible designs in accordance to established standards. To this end, this paper reports results from an evaluation of fifty user interfaces, generated using five publicly available AI design tools, against WCAG 2.1 criteria (e.g., text contrast and target size), comparing both accessibility-agnostic and accessibility-oriented text prompts. Our analysis reveals moderate violation severity (M=0.47) on a scale from 0, none to 4, critical), with text contrast (M=1.08) and target size (M=0.86) emerging as primary yet fixable violations. Contrary to our expectations, the accessibility-oriented prompt did not improve compliance in our dataset, but actually reduced it (M=0.54 vs. M=0.39). However, three of the examined AI tools showed improved results through dialogue and iterative refinement.
+  author:
+    - Guriță, Alexandra-Elena
+    - Vatavu, Radu-Daniel
+  date: 2025-05
+  page-range: 996-1000
+  parent:
+    parent:
+      title: "{WWW} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Companion {Proceedings} of the {ACM} on {Web} {Conference} 2025
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3701716.3715552
+    isbn: 979-8-4007-1331-6
+  title: Insights and {Implications} of {Evaluating} {Accessibility} {Compliance} in {AI}-{Generated} {Web} {Interfaces}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3701716.3715552
+gurita_understanding_2025:
+  abstract: 'As interface designers increasingly adopt AI-powered design tools, ensuring accessibility compliance presents unique challenges for human-AI collaboration. Through a mixed-methods study combining systematic evaluation of 200 generated interfaces across five AI design tools and interviews with six professional designers with extensive accessibility experience, we investigated patterns in designer-AI collaboration for accessible interface design. While 72% of interfaces exhibited accessibility violations, these were relatively minor (M = 1.2, SD = 0.4). Our analysis revealed distinct interaction patterns between designers and AI tools: iterative refinement (42% of cases) where designers progressively improved accessibility through dialogue, requirement prioritization between accessibility compliance and visual design, design consistency during targeted modifications. Component-level iterations had a median of 3 rounds, with average values suggesting similar behavior (M = 3.2, SD = 0.8), each targeting specific accessibility issues. Notably, the difference between control and accessibility-oriented prompts was minimal (Δ = 0.2), suggesting that successful accessibility implementation requires active designer engagement beyond initial prompting. We contribute empirical insights into designer-AI dialogue patterns and provide implications for developing more effective accessibility-focused AI design tools.'
+  author: Gurita, Alexandra-Elena
+  date: 2025-03
+  page-range: 101-104
+  parent:
+    parent:
+      title: "{IUI} '25 {Companion}"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Companion {Proceedings} of the 30th {International} {Conference} on {Intelligent} {User} {Interfaces}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3708557.3716347
+    isbn: 979-8-4007-1409-2
+  title: Understanding and {Improving} {Accessibility} in {AI}-{Generated} {Interfaces} through {Interactive} {Prompt} {Engineering} {Methods}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3708557.3716347
+gurita_when_2025:
+  abstract: The integration of Large Language Models (LLMs) into web development workflows has the potential to revolutionize user interface design, yet their ability to produce accessible interfaces still remains underexplored. In this paper, we present an evaluation of LLM-generated user interfaces against the accessibility criteria from the Web Content Accessibility Guidelines (WCAG 2.1), comparing the output of ChatGPT and Claude with two distinct prompt types—accessibility-agnostic and accessibility-oriented. Our evaluation approach, consisting of automated testing, expert evaluation, and LLM self-reflection, reveals that accessibility-oriented prompts increase success counts and reduce violation rates in WCAG criteria, but persistent barriers remain, particularly in semantic structure. We argue that advancing accessible user interface development through LLM-generated code requires not just enhanced prompting but deeper semantic understanding and context awareness in these systems. We use our findings to suggest future work opportunities on the development of next-generation LLM-based accessibility tools as well as practical implications for designers.
+  author:
+    - Gurita, Alexandra-Elena
+    - Vatavu, Radu-Daniel
+  date: 2025-10
+  page-range: 124-134
+  parent:
+    parent:
+      title: "{W4A} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 22nd {International} {Web} for {All} {Conference}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3744257.3744266
+    isbn: 979-8-4007-1882-3
+  title: When {LLM}-{Generated} {Code} {Perpetuates} {User} {Interface} {Accessibility} {Barriers}, {How} {Can} {We} {Break} the {Cycle}?
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3744257.3744266
+huh_designchecker_2024:
+  abstract: Blind and low vision (BLV) developers create websites to share knowledge and showcase their work. A well-designed website can engage audiences and deliver information effectively, yet it remains challenging for BLV developers to review their web designs. We conducted interviews with BLV developers (N=9) and analyzed 20 websites created by BLV developers. BLV developers created highly accessible websites but wanted to assess the usability of their websites for sighted users and follow the design standards of other websites. They also encountered challenges using screen readers to identify illegible text, misaligned elements, and inharmonious colors. We present DesignChecker, a browser extension that helps BLV developers improve their web designs. With DesignChecker, users can assess their current design by comparing it to visual design guidelines, a reference website of their choice, or a set of similar websites. DesignChecker also identifies the specific HTML elements that violate design guidelines and suggests CSS changes for improvements. Our user study participants (N=8) recognized more visual design errors than using their typical workflow and expressed enthusiasm about using DesignChecker in the future.
+  author:
+    - Huh, Mina
+    - Pavel, Amy
+  date: 2024-10
+  page-range: 1-19
+  parent:
+    parent:
+      title: "{UIST} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 37th {Annual} {ACM} {Symposium} on {User} {Interface} {Software} and {Technology}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3654777.3676369
+    isbn: 979-8-4007-0628-8
+  title:
+    short: '{DesignChecker}'
+    value: '{DesignChecker}: {Visual} {Design} {Support} for {Blind} and {Low} {Vision} {Web} {Developers}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3654777.3676369
+leedy_accessibility_2025:
+  abstract: As generative AI (GenAI) becomes more widely used in web content creation, assessing the accessibility of AI-generated websites is increasingly important for ensuring inclusive digital experiences. This study evaluates the accessibility performance of two GenAI-based website builders, Wix and Framer, using the Web Content Accessibility Guidelines (WCAG) as a benchmark. Accessibility was assessed using a combination of automated testing with the WAVE evaluation tool and manual inspection by two reviewers. Common issues included missing or vague alternative text, improper heading structures, inaccessible keyboard navigation, and inconsistently labeled interactive elements. While both platforms demonstrated some progress toward accessible design, neither consistently produced content that fully met WCAG 2.1 requirements. However, Wix-generated sites contained fewer accessibility errors and more consistent semantic HTML structure than those produced by Framer. Notably, Wix outperformed Framer according to the manual evaluations, indicating that platform design has a greater impact on accessibility outcomes than user prompts alone. These findings highlight ongoing gaps in current AI-driven website generation tools and underscore the need for better training models, stronger semantic understanding, and real-time accessibility guidance during content creation.
+  author:
+    - Leedy, Katelyn
+    - Preston, Makenzie
+    - Feng, Jinjuan
+    - Rezwana, Jeba
+  date: 2025-11
+  page-range: 304-314
+  parent:
+    parent:
+      title: Mindtrek '25
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 28th {International} {Academic} {Mindtrek} {Conference}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3757980.3757989
+    isbn: 979-8-4007-1512-9
+  title:
+    short: Accessibility in the {Age} of {Generative} {AI} {Web} {Based} {Builders}
+    value: 'Accessibility in the {Age} of {Generative} {AI} {Web} {Based} {Builders}: {Evaluating} {Web} {Design} {Tools} for {Inclusive} {Practices}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3757980.3757989
+mowar_accessibility_2024:
+  abstract: Despite extensive accessibility research, inaccessible websites remain stubbornly prevalent, partly due to limited accessibility awareness among web developers. The advent of code generation models presents an opportunity to guide accessibility-unaware developers toward enhanced accessibility practices. Our work examines the current state of accessibility in AI-assisted web development. Empirical evidence reveals code generation models serve as a double-edged sword, prompting a discussion on future research directions.
+  author: Mowar, Peya
+  date: 2024-10
+  page-range: 123-125
+  parent:
+    parent:
+      title: "{W4A} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 21st {International} {Web} for {All} {Conference}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3677846.3679054
+    isbn: 979-8-4007-1030-8
+  title: Accessibility in {AI}-{Assisted} {Web} {Development}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3677846.3679054
+mowar_codea11y_2025:
+  abstract: 'A persistent challenge in accessible computing is ensuring developers produce web UI code that supports assistive technologies. Despite numerous specialized accessibility tools, novice developers often remain unaware of them, leading to {~}96% of web pages that contain accessibility violations. AI coding assistants, such as GitHub Copilot, could offer potential by generating accessibility-compliant code, but their impact remains uncertain&nbsp;[52]. Our formative study with 16 developers without accessibility training revealed three key issues in AI-assisted coding: failure to prompt AI for accessibility, omitting crucial manual steps like replacing placeholder attributes, and the inability to verify compliance. To address these issues, we developed CodeA11y, a GitHub Copilot Extension, that suggests accessibility-compliant code and displays manual validation reminders. We evaluated it through a controlled study with another 20 novice developers. Our findings demonstrate its effectiveness in guiding novice developers by reinforcing accessibility practices throughout interactions, representing a significant step towards integrating accessibility into AI coding assistants.'
+  author:
+    - Mowar, Peya
+    - Peng, Yi-Hao
+    - Wu, Jason
+    - Steinfeld, Aaron
+    - Bigham, Jeffrey P
+  date: 2025-04
+  page-range: 1-15
+  parent:
+    parent:
+      title: "{CHI} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 2025 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3706598.3713335
+    isbn: 979-8-4007-1394-1
+  title:
+    short: '{CodeA11y}'
+    value: '{CodeA11y}: {Making} {AI} {Coding} {Assistants} {Useful} for {Accessible} {Web} {Development}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3706598.3713335
+mowar_tab_2024:
+  abstract: A long-standing challenge in accessible computing has been to get developers to produce the accessible UI code necessary for assistive technologies to work properly. AI coding assistants (e.g., Github Copilot) potentially offer a new opportunity to make UI code more accessible automatically, but it is unclear how their use impacts code accessibility and what developers need to know in order to use them effectively. In this paper, we report on a study where developers untrained in accessibility were tasked with building web UI components with and without an AI coding assistant. Our findings suggest that while current AI coding assistants show potential for creating more accessible UIs, they currently require accessibility awareness and expertise, limiting their expected impact.
+  author:
+    - Mowar, Peya
+    - Peng, Yi-Hao
+    - Steinfeld, Aaron
+    - Bigham, Jeffrey P
+  date: 2024-10
+  page-range: 1-6
+  parent:
+    parent:
+      title: "{ASSETS} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 26th {International} {ACM} {SIGACCESS} {Conference} on {Computers} and {Accessibility}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3663548.3688513
+    isbn: 979-8-4007-0677-6
+  title:
+    short: Tab to {Autocomplete}
+    value: 'Tab to {Autocomplete}: {The} {Effects} of {AI} {Coding} {Assistants} on {Web} {Accessibility}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3663548.3688513
+naur:
+  author: World Wide Web Consortium
+  date: 2022-09-03
+  title: Natural {Language} {Interface} {Accessibility} {User} {Requirements} ({NAUR})
+  type: misc
+  url:
+    date: 2026-05-21
+    value: https://www.w3.org/TR/naur/
 noauthor_accessibility_2026:
-  type: misc
-  title: 'Accessibility in {AI}-{Generated} {Content}: {Key} {Challenges} and {Practical} {Solutions} for 2026!'
   date: 2026-04
-  url: https://www.skynettechnologies.com/blog/accessibility-in-ai-generated-content
-
-wcag:
+  title: 'Accessibility in {AI}-{Generated} {Content}: {Key} {Challenges} and {Practical} {Solutions} for 2026!'
   type: misc
-  title: Web {Content} {Accessibility} {Guidelines} ({WCAG}) 2.2
+  url: https://www.skynettechnologies.com/blog/accessibility-in-ai-generated-content
+noauthor_ai-generated_2026:
+  abstract: It doesn't mean you can't get AI to help with accessible code, you've just got to know what you're doing.
+  date: 2026-04
+  title: '{AI}-{Generated} {UI} {Is} {Inaccessible} by {Default} – {Frontend} {Masters} {Blog}'
+  type: misc
+  url:
+    date: 2026-05-21
+    value: https://frontendmasters.com/blog/ai-generated-ui-is-inaccessible-by-default/
+ok-top-3337_blind_2025:
+  author: Ok-Top-3337
+  date: 2025-06
+  genre: Reddit Post
+  title: A blind developer using {Claude} to create accessible software can’t acces {Claude}.
+  type: misc
+  url:
+    date: 2026-05-20
+    value: https://www.reddit.com/r/ClaudeAI/comments/1lhqnse/a_blind_developer_using_claude_to_create/
+palmer_constructing_2025:
+  abstract: Generative AI tools allow anyone without web-design experience to have a business website created when the user provides a few specifications about the business, such as its name, type, and location. But the resulting websites not only fall short of the business's basic needs but they also raise major concerns about their accessibility for disabled users. This study specifically examines whether these AI generated websites are accessible to screen-reader users with visual disabilities. It presents data about the usability and accessibility of the products of three generative AI website builders, highlights the specific problems found by an expert screen reader test along with an automated machine scan of these sites, and discusses some causes of and recommendations for solving these problems.
+  author:
+    - Palmer, Zsuzsanna B.
+    - Oswal, Sushil K.
+  date: 2025-01
+  page-range: 93-114
+  parent:
+    issue: 1
+    publisher: SAGE Publications Inc
+    title: Journal of Business and Technical Communication
+    type: periodical
+    volume: 39
+  serial-number:
+    doi: 10.1177/10506519241280644
+    issn: 1050-6519
+  title:
+    short: Constructing {Websites} with {Generative} {AI} {Tools}
+    value: 'Constructing {Websites} with {Generative} {AI} {Tools}: {The} {Accessibility} of {Their} {Workflows} and {Products} for {Users} {With} {Disabilities}'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://doi.org/10.1177/10506519241280644
+patel_exploring_2025:
+  abstract: Web accessibility is a cornerstone of inclusive digital design, yet developers often face challenges in effectively implementing best practices. AI development assistants (AIDA) have emerged as potential solutions, offering automated code suggestions and accessibility recommendations. However, little is known about how student developers perceive and integrate these tools to ensure compliance with web accessibility standards. To address this gap, we conducted an exploratory study using semi-structured interviews with 14 student web developers to understand their experiences with AIDA as well as barriers to adoption. The findings emphasized that confidence in AI-generated accessibility suggestions was often limited, conditional, and shaped by student developer perceptions of reliability, transparency, and contextual awareness.
+  author:
+    - Patel, Pooja
+    - Melcer, Edward Franklin
+  date: 2025-07
+  page-range: 298-301
+  parent:
+    parent:
+      title: "{PETRA} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 18th {ACM} {International} {Conference} on {PErvasive} {Technologies} {Related} to {Assistive} {Environments}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3733155.3737913
+    isbn: 979-8-4007-1402-3
+  title: Exploring {Student} {Developers}’ {Trust}, {Adoption}, and {Usage} of {AI}-{Powered} {Coding} {Assistants} for {Web} {Accessibility} {Compliance}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3733155.3737913
+pillai_website_2022:
+  abstract: Website builders enable individuals without design or technical skills to create websites. However, it is unclear if modern websites created by website builders meet accessibility standards. We reviewed six popular website building platforms and found a lack of accessibility support. Wix provided the most comprehensive accessibility documentation and robust accessibility features. However, during an accessibility audit of 90 Wix webpages, we found many accessibility issues, raising concerns about how users are supported.
+  author:
+    - Pillai, Athira
+    - Shinohara, Kristen
+    - Tigwell, Garreth W.
+  date: 2022-10
+  page-range: 1-4
+  parent:
+    parent:
+      title: "{ASSETS} '22"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 24th {International} {ACM} {SIGACCESS} {Conference} on {Computers} and {Accessibility}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3517428.3550368
+    isbn: 978-1-4503-9258-7
+  title: Website {Builders} {Still} {Contribute} {To} {Inaccessible} {Web} {Design}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3517428.3550368
+roig_authoring_2023:
+  abstract: Of all the digital documents that are published daily, only part of them are accessible to people with disabilities or temporary or situational disabilities or functional diversity. This contravenes the growing interest and legal pressure to produce accessible content. Three agents are involved in the production of a digital document; the digital format of the document, the authoring tool that creates the content according to the potential of said format and, finally, the author of the document. The most widespread digital formats (ODF, PDF/UA or HTML) offer the elements to potentially create documents with a high degree of accessibility, and therefore the attention should be directed to the authoring tools and the authors of the documents. The latter should be accounted for relevant elements in accessibility as the use of plain language or clarity in the presentation; however, authoring tools are primarily responsible for producing accessible documents. ATAG provides recommendations for authoring tools, but they are general (they apply to all authoring tools) and do not include any interaction requirements. This study proposes 15 recommendations that could provide a second level of depth in the requirements of authoring tools customized to word processors and that also include recommendations on the interaction design. To do this, the article classifies the different items that can be found in textual documents, starting from books as a superset of any textual document; subsequently, it describes the main barriers users face according to their functional diversity. The final result, based on the classification of the elements and the different ways of accessing the content, are 15 recommendations for textual documents authoring tools.
+  author:
+    - Roig, Jordi
+    - Ribera, Mireia
+    - Alcaraz, Rubén
+  date: 2023-05
+  page-range: 160-165
+  parent:
+    parent:
+      title: "{DSAI} '22"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 10th {International} {Conference} on {Software} {Development} and {Technologies} for {Enhancing} {Accessibility} and {Fighting} {Info}-exclusion
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3563137.3563153
+    isbn: 978-1-4503-9807-7
+  title:
+    short: Authoring tools are critical to the accessibility of the documents
+    value: 'Authoring tools are critical to the accessibility of the documents: {Recommendations} for word processors, including interaction design'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3563137.3563153
+roig_creation_2015:
+  abstract: This paper presents a quantitative evaluation of the conversion results from office documents to the EPUB format. As a general conclusion, the results of the conversions do not meet the standards nor preserve the accessibility information. Furthermore, tools are overdue in adopting the format EPUB3.
+  author:
+    - Roig, Jordi
+    - Ribera, Mireia
+  date: 2015-09
+  page-range: 1-2
+  parent:
+    parent:
+      title: Interacci&#xf3;n '15
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the {XVI} {International} {Conference} on {Human} {Computer} {Interaction}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/2829875.2829926
+    isbn: 978-1-4503-3463-1
+  title:
+    short: Creation of accessible {EPUB} documents by non-technical users
+    value: 'Creation of accessible {EPUB} documents by non-technical users: a long way to go'
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/2829875.2829926
+suh_human_nodate:
+  abstract: Web accessibility is essential for inclusive digital experiences, yet the accessibility of LLM-generated code remains underexplored. This paper presents an empirical study comparing the accessibility of web code generated by GPT-4o and Qwen2.5-Coder-32B-InstructAWQ against human-written code. Results show that LLMs often produce more accessible code, especially for basic features like color contrast and alternative text, but struggle with complex issues such as ARIA attributes. We also assess advanced prompting strategies (Zero-Shot, Few-Shot, Self-Criticism), finding they offer some gains but are limited. To address these gaps, we introduce FeedA11y, a feedback-driven ReAct-based approach that significantly outperforms other methods in improving accessibility. Our work highlights the promise of LLMs for accessible code generation and emphasizes the need for feedback-based techniques to address persistent challenges. We provide the source code and datasets that were used in our experiments in the companion website [5].
+  author:
+    - Suh, Hyunjae
+    - Tafreshipour, Mahan
+    - Malek, Sam
+    - Ahmed, Iftekhar
+  parent:
+    type: periodical
+  title: Human or {LLM}? {A} {Comparative} {Study} on {Accessible} {Code} {Generation} {Capability}
+  type: article
+tankelevitch_metacognitive_2024:
+  abstract: Generative AI (GenAI) systems offer unprecedented opportunities for transforming professional and personal work, yet present challenges around prompting, evaluating and relying on outputs, and optimizing workflows. We argue that metacognition—the psychological ability to monitor and control one’s thoughts and behavior—offers a valuable lens to understand and design for these usability challenges. Drawing on research in psychology and cognitive science, and recent GenAI user studies, we illustrate how GenAI systems impose metacognitive demands on users, requiring a high degree of metacognitive monitoring and control. We propose these demands could be addressed by integrating metacognitive support strategies into GenAI systems, and by designing GenAI systems to reduce their metacognitive demand by targeting explainability and customizability. Metacognition offers a coherent framework for understanding the usability challenges posed by GenAI, and provides novel research and design directions to advance human-AI interaction.
+  author:
+    - Tankelevitch, Lev
+    - Kewenig, Viktor
+    - Simkute, Auste
+    - Scott, Ava Elizabeth
+    - Sarkar, Advait
+    - Sellen, Abigail
+    - Rintel, Sean
+  date: 2024-05
+  page-range: 1-24
+  parent:
+    parent:
+      title: "{CHI} '24"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 2024 {CHI} {Conference} on {Human} {Factors} in {Computing} {Systems}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3613904.3642902
+    isbn: 979-8-4007-0330-0
+  title: The {Metacognitive} {Demands} and {Opportunities} of {Generative} {AI}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3613904.3642902
+wcag:
   author: World Wide Web Consortium
   date: 2024-12-12
+  title: Web {Content} {Accessibility} {Guidelines} ({WCAG}) 2.2
+  type: misc
   url:
-    value: https://www.w3.org/TR/WCAG22/
     date: 2026-10-01
+    value: https://www.w3.org/TR/WCAG22/
+yeratziotis_web-based_2025:
+  abstract: Web users vary widely in characteristics such as age, education level, technological proficiency, and, critically, ability. Disabilities - whether sensory (e.g., vision or hearing), motor (e.g., limited hand mobility), or cognitive (e.g., learning difficulties) - affect a significant portion of the population and can hinder equitable access to online content. Designing with accessibility and inclusiveness in mind is essential to ensuring equal access for all users. One key requirement for web accessibility is the use of meaningful alternative text (alt-text) for images.This paper presents a tool for automatic recognition, authoring, and enhancement of image alt-text, developed in alignment with established accessibility guidelines. The tool design was informed by a review on web accessibility and alt-text practices, with particular attention to common challenges and the critical role of alt-text in inclusive web design. Existing tools were also examined to identify gaps and inform improvements. Building on this foundation, the Alt-Text Authoring Tool was developed and evaluated against similar tools, demonstrating enhanced functionality. The tool was evaluated by ICT professionals in Greece and Cyprus with respect to its usefulness, usability, educational value, and potential for adoption.
+  author:
+    - Yeratziotis, Alexandros
+    - Tsouris, Constantinos
+    - Mettouris, Christos
+    - Kyprianou, Marios
+    - Papadopoulos, George Angelos
+  date: 2025-12
+  page-range: 235-243
+  parent:
+    parent:
+      title: "{GoodIT} '25"
+      type: proceedings
+    publisher:
+      location: New York, NY, USA
+      name: Association for Computing Machinery
+    title: Proceedings of the 2025 {International} {Conference} on {Information} {Technology} for {Social} {Good}
+    type: proceedings
+  serial-number:
+    doi: 10.1145/3748699.3749797
+    isbn: 979-8-4007-2089-5
+  title: A {Web}-{Based} {Tool} for {Automated} {Recognition}, {Authoring} and {Enhancement} of {Alt}-{Text}
+  type: article
+  url:
+    date: 2026-05-21
+    value: https://dl.acm.org/doi/10.1145/3748699.3749797

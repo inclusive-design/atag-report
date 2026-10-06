@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Sveltia CMS</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <script type="module">
+        import {createTypstCompiler} from "https://cdn.jsdelivr.net/npm/typst-wasm@1.0.0/+esm";
+        import {createWebWorker} from "https://cdn.jsdelivr.net/npm/typst-wasm@1.0.0/dist/worker/browser.js";
+
+        const {useEffect, useState} = CMS.React;
+
+        // TODO: fetch using collections
+        const bibliography = await fetch('/bibliography.yml').then(response => response.blob()).then(blob => blob.text());
+
+        const TypstPreview = ({entry}) => {
+            const [result, setResult] = useState('');
+
+            const body = entry.getIn(['data', 'body']);
+
+            useEffect(() => {
+                let cancelled = false;
+                let compiler = null;
+                let workerUrl = null;
+
+                (async () => {
+                    const typstCdn =
+                        "https://cdn.jsdelivr.net/npm/typst-wasm@1.0.0/dist";
+                    const fontsCdn =
+                        "https://cdn.jsdelivr.net/npm/@typst-wasm/fonts@1.0.0/dist/files";
+
+                    // A Worker must normally be same-origin with its page. This blob module
+                    // imports the worker entry from the CDN while giving Worker a same-origin URL.
+                    const workerEntry = `${typstCdn}/worker/web-worker.js`;
+                    workerUrl = URL.createObjectURL(
+                        new Blob([`import ${JSON.stringify(workerEntry)};`], {
+                            type: "text/javascript",
+                        }),
+                    );
+
+                    compiler = await createTypstCompiler({
+                        backend: "auto",
+                        worker: () => createWebWorker(workerUrl),
+                        coreModules: {
+                            "engine.core.wasm": WebAssembly.compileStreaming(
+                                fetch(`${typstCdn}/engine/engine.core.wasm`),
+                            ),
+                            "engine.core2.wasm": WebAssembly.compileStreaming(
+                                fetch(`${typstCdn}/engine/engine.core2.wasm`),
+                            ),
+                            "engine.core3.wasm": WebAssembly.compileStreaming(
+                                fetch(`${typstCdn}/engine/engine.core3.wasm`),
+                            ),
+                        },
+                    });
+
+                    await compiler.addSource("index.typ", entry.getIn(['data', 'body']));
+                    await compiler.addSource("bibliography.yml", bibliography);
+
+                    const compiled = await compiler.compile({
+                        main: "index.typ",
+                        format: "html",
+                    });
+
+                    if (!cancelled) setResult(compiled.output);
+
+
+                })();
+
+                return () => {
+                    cancelled = true;
+                    compiler?.dispose?.();
+                    if (workerUrl) URL.revokeObjectURL(workerUrl);
+                };
+            }, [body]);
+
+            const doc = new DOMParser().parseFromString(result || '', 'text/html');
+
+            return h('main', {dangerouslySetInnerHTML: {__html: doc.body.innerHTML}});
+        };
+
+        // TODO: Add preview style.
+        CMS.registerPreviewTemplate('document', TypstPreview);
+    </script>
+</body>
+
+</html>

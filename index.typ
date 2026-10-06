@@ -6,17 +6,17 @@
 
 #outline()
 
-== Introduction
+= Introduction
 
 Authoring Tool Accessibility Guidelines (ATAG) 2.0 is a 2015 World Wide Web Consortium (W3C) Recommendation which "provides guidelines for designing web content authoring tools that are both more accessible to authors with disabilities … and designed to enable, support, and promote the production of more accessible web content by all authors" @atag. Since the publication of the ATAG 2.0 Recommendation, the advent of Generative Artificial Intelligence (AI) and its integration into authoring environments has significantly altered the experience and process of authoring web content.
 
 In this research report, we aim to assess the impact and opportunities of these technologies for the existing principles and guidelines of ATAG 2.0, and provide recommendations
 
-== Research Insights by ATAG Requirement
+= Research Insights by ATAG Requirement
 
-=== A. Make the Authoring tool user interface accessible
+== A. Make the Authoring tool user interface accessible
 
-==== Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines
+=== Principle A.1: Authoring tool user interfaces follow applicable accessibility guidelines
 
 As Generative AI is increasingly integrated into authoring tools, new accessibility issues may be introduced by the Generative AI tools themselves @atag @atag-2026-05-22 @atag-2026-06-19. A blind developer identified multiple issues with the web-based interface to Anthropic’s Claude Generative AI tool which prevented them from using screen readers to interact with the tool @ok-top-3337_blind_2025. Blind and low-vision developers also identified issues with the category of Generative AI coding assistants, within the realms of content switching, control and predictability, and cognitive overload caused by the volume of output @flores-saviaga_impact_2025. As “current interfaces rely mostly on visual-only indicators… real-time status updates, clear explanations of outputs, and accessible methods for users to verify, understand, and act upon AI-generated results” will be critical to the accessibility of Generative AI-based authoring tools @chen_screen_2025. One specific accessibility barrier that blind and low-vision users identified with Generative AI tools is keyboard accessibility, specifically scenarios where “shortcuts conflicted with their established keyboard habits” such as “up and down arrow keys in the input box—rather than moving between lines in a multiline-prompt, these keys cycled through previous commands, often without users realizing it” @chen_screen_2025. The use of “consistent and predictable keyboard shortcuts” can help to “[address] participants’ difficulties with unintended actions that disrupt their workflow” @chen_screen_2025.
 
@@ -24,19 +24,19 @@ In addition to baseline accessibility of authoring tool interfaces following WCA
 
 Other research identifies “metacognitive” demands of Generative AI interfaces, such as the “open-endedness of many current prompting interfaces [which] requires users to have self-awareness of their specific task goals, and be able to decompose their tasks into smaller sub-tasks so as to verbalize these as effective prompts” @tankelevitch_metacognitive_2024. Additionally, authoring tools which integrate natural language interfaces must support multimodal input and output mechanisms to support a wide range of user needs, and should also ensure that input and output mechanisms can be combined according to user requirements, so that, for example, “[a] user who is deaf or hard of hearing… [can] provide speech input to an application, while having the output presented as text” @naur.
 
-==== Principle A.2: Editing-views are perceivable
+=== Principle A.2: Editing-views are perceivable
 
 If Generative AI-based authoring tools work with non-text content, it’s essential that they programmatically associate user-supplied text alternatives with that content in the editing view @atag-2026-05-22. It may also be possible for Generative AI-based authoring tools to generate text alternatives for content where the author has not provided them @conversational_ai.
 
 Another factor to consider is when Generative AI is used to create non-text content such as pictures or videos. For blind or low vision authors, they may be able to provide and/or read the generated text alternatives; however, they may not be able to perceive the actual generated content. A suggestion for this is to have AI act as an intermediary that can describe the generated content to the author .
 
-==== Principle A.3. Editing-views are operable
+=== Principle A.3. Editing-views are operable
 
 Generative AI tools can potentially be integrated into authoring tools in such a way as to make the editing views more operable @atag-2026-05-22. For example, section A.3.4 of ATAG suggests that the content structure should be adapted to enhance navigation, for example, to facilitate navigation by structure @atag. This sort of functionality must currently be built into the authoring tool, but a Generative AI agent with access to the content could create and update a table of contents which would facilitate such operability.
 
 Generative AI-enabled authoring tools should support the ability of authors to “personalize the interface according to their needs” @chen_screen_2025 (see points under Principle A.1 about multi-modal interface options, keyboard customization etc.).
 
-==== Principle A.4. Editing-views are understandable
+=== Principle A.4. Editing-views are understandable
 
 The use of “streamlined and predictable interaction patterns” will be essential in the design of Generative AI-assisted authoring tools @chen_screen_2025.
 
@@ -46,9 +46,9 @@ When website builders provide accessibility features and documentation, they are
 
 Documentation of authoring tools which incorporate Generative AI will need to include detailed guidance on how to use those tools effectively to produce accessible content. Research has found “several differences in WCAG compliance between accessibility-oriented and accessibility-agnostic prompts, highlighting the importance of explicit accessibility guidance” @gurita_breaking_2025.
 
-=== B. Support the production of accessible content
+== B. Support the production of accessible content
 
-==== Principle B.1. Fully automatic processes produce accessible content
+=== Principle B.1. Fully automatic processes produce accessible content
 
 Generative AI tools such as ChatGPT can generate websites; however, they do not tend to produce accessible websites by default nor perfectly compliant sites even with explicit accessibility guidance @chen_screen_2025, @atag, @atag-2025-12-05. This is likely due in part to lack of training on compliant code; as simpler and more common representations of accessible interfaces (e.g. checkboxes, tables) are more often generated correctly5. Some of the accessibility issues that may be produced include lack of contrast, improper labelling or text information, even non-unique IDs. While the model can be instructed to modify or correct its output, due to the limitations in training, it often can still not completely address all issues @palmer_constructing_2025. To improve Generative AI output, a foundation prompt or context can be provided to include more detailed instructions about producing accessible code and markup @atag-2025-12-05. However, even with this in place the Generative AI may still require follow up prompts to correct missing, or incorrectly generated output @doush_evaluating_2025. It is also important to note that the Generative AI results tend to decline as requests become more complex or ambiguous @gurita_breaking_2025.
 
@@ -76,7 +76,7 @@ Another approach that Generative AI can strive for is to produce semantically ac
 
 Section 11.8.3 of CAN/ASC - EN 301 549:2024 Accessibility requirements for ICT products and services (EN 301 549:2021, IDT) specification requires that "[if] the authoring tool provides restructuring transformations or re-coding transformations, then accessibility information shall be preserved in the output if equivalent mechanisms exist in the content technology of the output" @canasc.
 
-==== Principle B.2. Authors are supported in producing accessible content
+=== Principle B.2. Authors are supported in producing accessible content
 
 Even the most popular website builders, such as Wix and Squarespace, will default to using the file name or image caption as an image’s alt text @conversational_ai.
 
@@ -96,17 +96,17 @@ Section 11.8.2 of CAN/ASC - EN 301 549:2024 Accessibility requirements for ICT p
 
 Section 11.8.5 of CAN/ASC - EN 301 549:2024 Accessibility requirements for ICT products and services (EN 301 549:2021, IDT) specification requires that tools which provide templates provide accessible templates @canasc.
 
-==== Principle B.3. Authors are supported in improving the accessibility of existing content
+=== Principle B.3. Authors are supported in improving the accessibility of existing content
 
 Beyond authoring code Generative AI tools can be instructed to remediate existing code. Research has found that instructing a well-trained Generative AI model of the necessary remediations required with instruction based on WCAG principle can fix issues. However, as of yet it isn’t 100% capable which may be related to complexities of the accessibility issues, understanding of the code to remediate, effectiveness of the prompts, and/or training @aljedaani_does_2024. While Generative AI may not be able to handle complex remediation, it could be used to handle more routine accessibility issues. Thereby, freeing up time for the authors to focus on the more complex issues manually @suh_human_nodate.
 
 Section 11.8.4 of CAN/ASC - EN 301 549:2024 Accessibility requirements for ICT products and services (EN 301 549:2021, IDT) specification requires that the accessibility checking functionality of tools that can detect when accessibility requirements are not met, to also provide suggestions on how to fix them. They could also automate the fixing process where applicable @canasc.
 
-==== Principle B.4. Authoring tools promote and integrate their accessibility features
+=== Principle B.4. Authoring tools promote and integrate their accessibility features
 
 For Generative AI-based authoring tools/environments, users may have varying degrees of experience and may come from different backgrounds (e.g. developer vs designer). The tools need to support interaction patterns with the user, providing real time accessibility feedback and guidance through complex accessibility/design decisions @gurita_understanding_2025. The tools should also be able to transparently explain its reasoning behind choices @gurita_breaking_2025. In addition to informing the user about potential requirements that are being followed, they should encourage the user to reflect on the impact of modifications/refinement.
 
-=== Other thoughts/questions
+== Other thoughts/questions
 
 - Is generating markup/code from a Generative AI prompt a transformation? Or maybe at what point would it be so?
 - Does using Generative AI invert the paradigm of ATAG where the human author now takes on the responsibility of guiding about and ensuring accessible content is generated?
@@ -121,6 +121,6 @@ For Generative AI-based authoring tools/environments, users may have varying deg
 - If Generative AI output is evaluated based on adherence to specs like WCAG, will it reinforce the checklist mentality instead of thinking of WCAG and ATAG as baselines?
 - It seems that as Generative AI sessions grow longer, the models are more likely to stray from their guardrails, and likely foundation prompts. This may suggest a preference to using shorter sessions or specific Generative AI agents to generate accessible code or components. Much of the research seemed focused on shorter interactions and didn’t much explore the larger complexities of details planning and implementation sessions.
 
-== Conclusion
+= Conclusion
 
 #bibliography("bibliography.yml", style: "apa")

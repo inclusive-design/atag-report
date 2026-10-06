@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: inclusive-design/atag-report
+
+media_folder: /public/media
+public_folder: /media
+
+singletons:
+  - name: document
+    label: Content
+    file: index.typ
+    format: raw
+    fields:
+      - label: Document
+        name: body
+        widget: code
+        output_code_only: true
+        allow_language_selection: false
+        default_language: typst
+
+  - name: bibliography
+    label: Bibliography
+    file: bibliography.yml
+    format: raw
+    editor:
+      preview: false
+    fields:
+      - label: Bibliography
+        name: body
+        widget: code
+        output_code_only: true
+        allow_language_selection: false
+        default_language: yaml
