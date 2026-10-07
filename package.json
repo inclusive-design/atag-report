@@ -11,16 +11,17 @@
     "url": "git+https://github.com/inclusive-design/atag-report.git"
   },
   "type": "module",
-  "main": "eleventy.config.js",
+  "main": "buildawesome.config.js",
   "scripts": {
-    "build": "buildawesome",
-    "clean": "rimraf _site",
+    "build": "run-s clean build:site",
+    "build:site": "buildawesome",
+    "clean": "rimraf _site/*",
     "serve": "buildawesome --serve",
     "start": "run-s clean serve",
     "test": "node --test"
   },
   "dependencies": {
-    "@awesome.me/buildawesome": "4.0.0-alpha.10",
+    "@awesome.me/buildawesome": "^4.0.0-alpha.10",
     "@typst-wasm/fonts": "^1.0.0",
     "typst-wasm": "^1.0.0"
   },

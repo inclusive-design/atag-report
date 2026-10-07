@@ -6,8 +6,8 @@ import { createWorkerThread } from "typst-wasm/worker/node";
  * @param {import("@awesome.me/buildawesome").UserConfig} config An instance of Eleventy's UserConfig class.
  * @returns {object} The configuration object.
  */
-export default function buildAwesome($config) {
-	// $config.addTemplateFormats("typ");
+export default function ($config) {
+	$config.addTemplateFormats('typ');
 
 	/* $config.addExtension("typ", {
 	compile: async (inputContent) => {
@@ -53,13 +53,7 @@ export default function buildAwesome($config) {
 	},
 	}); */
 
-	$config.addPassthroughCopy('admin');
-
+	$config.addPassthroughCopy('admin/cms.js');
+	$config.addPassthroughCopy('admin/config.yml');
 	$config.addPassthroughCopy('bibliography.yml');
-
-	return {
-		templateFormats: ['typ', 'njk'],
-		htmlTemplateEngine: 'njk',
-		markdownTemplateEngine: 'njk',
-	};
 }
