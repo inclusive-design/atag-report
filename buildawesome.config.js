@@ -53,7 +53,8 @@ export default function ($config) {
 	},
 	}); */
 
-	$config.addPassthroughCopy('admin/cms.js');
+	$config.addPassthroughCopy('admin/preview.js');
+	$config.addPassthroughCopy('admin/preview.css');
 	$config.addPassthroughCopy('admin/config.yml');
 	$config.addPassthroughCopy('bibliography.yml');
 }

@@ -1,0 +1,45 @@
+@import url(https://fonts.bunny.net/css?family=libertinus-serif:400,400i,700,700i);
+
+body {
+    font-family: 'Libertinus Serif', serif;
+    font-size: 20px;
+}
+
+main {
+    margin-inline: auto;
+    width: 65ch;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+[role="doc-bibliography"] ul {
+    padding-inline-start: 0;
+    text-indent: -0.5in;
+    margin-inline-start: 0.5in;
+}
+
+[role="doc-bibliography"] ul li+li {
+    margin-block-start: 1rem;
+}
