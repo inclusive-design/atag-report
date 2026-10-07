@@ -42,14 +42,33 @@ export default function ($config) {
 				});
 
 				try {
+					await compiler.addFonts(
+						new Uint8Array(
+							await readFile(
+								new URL(
+									import.meta.resolve("@typst-wasm/fonts/NewCMMath-Regular.otf"),
+								),
+							),
+						),
+					);
+
 					await compiler.addSource("index.typ", inputContent);
 					await compiler.addSource("bibliography.yml", bibliography);
+
 					html = await compiler.compile({
 						main: "index.typ",
 						format: "html",
 					});
+
+					pdf = await compiler.compile({
+						main: "index.typ",
+						format: "pdf",
+					});
+
 				} finally {
+					await writeFile('_site/download.pdf', pdf.output);
 					await compiler.dispose();
+					return async () => html.output;
 				}
 			} catch (cause) {
 				if (!disposed)
