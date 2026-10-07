@@ -75,6 +75,10 @@ const TypstPreview = ({ entry, getCollection }) => {
 
 	const doc = new DOMParser().parseFromString(result || '', 'text/html');
 
+	for (const anchorLink of doc.querySelectorAll('a[href^="#"]')) {
+		anchorLink.setAttribute('target', "_self");
+	};
+
 	return html`<main dangerouslySetInnerHTML=${{ __html: doc.body.innerHTML }}></main>`;
 };
 

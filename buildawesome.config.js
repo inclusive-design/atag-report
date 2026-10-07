@@ -2,12 +2,14 @@ import { readFile, writeFile } from "node:fs/promises";
 import { createTypstCompiler } from "typst-wasm";
 import { createWorkerThread } from "typst-wasm/worker/node";
 import HtmlToDocx from "@turbodocx/html-to-docx";
+import { parseHTML } from 'linkedom';
 
 /**
  * @param {import("@awesome.me/buildawesome").UserConfig} config An instance of Eleventy's UserConfig class.
  * @returns {object} The configuration object.
  */
 export default function ($config) {
+
 	$config.addTemplateFormats('typ');
 
 	$config.addExtension("typ", {
@@ -79,6 +81,16 @@ export default function ($config) {
 					console.error(cause instanceof Error ? cause.message : String(cause));
 			}
 		},
+	});
+
+	$config.addTransform('parse', async function (value, outputPath) {
+		if (!outputPath || !outputPath.includes('.html')) {
+			return value;
+		}
+
+		const { document } = parseHTML(value);
+		document.querySelectorAll('[style]').forEach(el => el.removeAttribute('style'));
+		return document.toString();
 	});
 
 	$config.addPassthroughCopy('admin/preview.js');
