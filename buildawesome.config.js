@@ -62,7 +62,7 @@ export default function ($config) {
 
 					pdf = await compiler.compile({
 						main: "index.typ",
-						format: "pdf",
+						format: "pdf"
 					});
 
 				} finally {
@@ -80,5 +80,4 @@ export default function ($config) {
 	$config.addPassthroughCopy('admin/preview.js');
 	$config.addPassthroughCopy('admin/preview.css');
 	$config.addPassthroughCopy('admin/config.yml');
-	$config.addPassthroughCopy('bibliography.yml');
 }
