@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { createTypstCompiler } from "typst-wasm";
 import { createWorkerThread } from "typst-wasm/worker/node";
+import HtmlToDocx from "@turbodocx/html-to-docx";
 
 /**
  * @param {import("@awesome.me/buildawesome").UserConfig} config An instance of Eleventy's UserConfig class.
@@ -13,7 +14,7 @@ export default function ($config) {
 		compile: async (inputContent) => {
 			const bibliography = await readFile('bibliography.yml').then(result => result.toString());
 			let disposed = false;
-			let html, pdf;
+			let html, docx, pdf;
 
 			try {
 				const compiler = await createTypstCompiler({
@@ -65,8 +66,11 @@ export default function ($config) {
 						format: "pdf"
 					});
 
+					docx = await HtmlToDocx(html.output);
+
 				} finally {
 					await writeFile('_site/download.pdf', pdf.output);
+					await writeFile('_site/download.docx', docx);
 					await compiler.dispose();
 					return async () => html.output;
 				}

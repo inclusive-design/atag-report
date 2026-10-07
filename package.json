@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@awesome.me/buildawesome": "^4.0.0-alpha.10",
+    "@turbodocx/html-to-docx": "^1.23.1",
     "@typst-wasm/fonts": "^1.0.0",
     "typst-wasm": "^1.0.0"
   },
