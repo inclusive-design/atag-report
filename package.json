@@ -16,7 +16,7 @@
     "build": "run-s clean build:site",
     "build:site": "NODE_OPTIONS='--no-experimental-webstorage' buildawesome",
     "clean": "rimraf _site/*",
-    "serve": "buildawesome --serve",
+    "serve": "NODE_OPTIONS='--no-experimental-webstorage' buildawesome --serve",
     "start": "run-s clean serve",
     "test": "node --test"
   },

@@ -3,7 +3,7 @@ import { createWebWorker } from "https://cdn.jsdelivr.net/npm/typst-wasm@1.0.0/d
 
 const { useEffect, useState } = CMS.React;
 
-const TypstPreview = ({ entry, getCollection }) => {
+const TypstPreview = ({ entry, getCollection, window }) => {
 	const [result, setResult] = useState('');
 
 	const body = entry.getIn(['data', 'body']);
@@ -76,7 +76,8 @@ const TypstPreview = ({ entry, getCollection }) => {
 	const doc = new DOMParser().parseFromString(result || '', 'text/html');
 
 	for (const anchorLink of doc.querySelectorAll('a[href^="#"]')) {
-		anchorLink.setAttribute('target', "_self");
+		anchorLink.setAttribute('href', `${window.location.href}${anchorLink.getAttribute('href')}`);
+		anchorLink.setAttribute('target', '_self');
 	};
 
 	return html`<main dangerouslySetInnerHTML=${{ __html: doc.body.innerHTML }}></main>`;
