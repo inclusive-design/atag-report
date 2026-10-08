@@ -1,4 +1,4 @@
-@import url(https://fonts.bunny.net/css?family=libertinus-serif:400,400i,700,700i);
+@import url('https://fonts.bunny.net/css?family=libertinus-serif:400,400i,700,700i');
 
 body {
     font-family: 'Libertinus Serif', serif;
@@ -35,9 +35,9 @@ a:visited {
 }
 
 [role="doc-bibliography"] ul {
+    margin-inline-start: 0.5in;
     padding-inline-start: 0;
     text-indent: -0.5in;
-    margin-inline-start: 0.5in;
 }
 
 [role="doc-bibliography"] ul li+li {

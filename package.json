@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/inclusive-design/atag-report#readme",
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/inclusive-design/atag-report/issues"
   },
@@ -14,25 +16,52 @@
   "main": "buildawesome.config.js",
   "scripts": {
     "build": "run-s clean build:site",
-    "build:site": "NODE_OPTIONS='--no-experimental-webstorage' buildawesome",
+    "build:site": "buildawesome",
     "clean": "rimraf _site/*",
-    "serve": "NODE_OPTIONS='--no-experimental-webstorage' buildawesome --serve",
+    "lint": "run-s -l lint:*",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "lint:eslint": "eslint",
+    "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "serve": "buildawesome --serve",
     "start": "run-s clean serve",
-    "test": "node --test"
+    "test": "echo \"No test specified\" && exit 0",
+    "prepare": "husky"
   },
   "dependencies": {
     "@awesome.me/buildawesome": "^4.0.0-alpha.10",
     "@turbodocx/html-to-docx": "^1.23.1",
     "@typst-wasm/fonts": "^1.0.0",
     "linkedom": "^0.18.13",
+    "pandoc-wasm": "^1.1.0",
     "typst-wasm": "^1.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@inclusive-design/eslint-config": "^0.5.0",
+    "@inclusive-design/markdownlint-config": "^0.1.0",
+    "@inclusive-design/stylelint-config": "^0.1.0",
+    "eslint": "^10.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^17.0.0",
     "npm-run-all2": "^9.0.3",
     "rimraf": "^6.1.3"
   },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ],
+    "*.{cjs,js,json,mjs}": [
+      "eslint --fix"
+    ],
+    "*.md": [
+      "eslint --fix",
+      "markdownlint-cli2 --fix"
+    ]
+  },
   "allowScripts": {
     "fsevents@2.3.3": true,
-    "@turbodocx/html-to-docx@1.23.1": true
+    "@turbodocx/html-to-docx@1.23.1": true,
+    "unrs-resolver@1.12.2": true
   }
 }

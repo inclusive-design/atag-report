@@ -1,95 +1,91 @@
-import { readFile, writeFile } from "node:fs/promises";
-import { createTypstCompiler } from "typst-wasm";
-import { createWorkerThread } from "typst-wasm/worker/node";
-import HtmlToDocx from "@turbodocx/html-to-docx";
+import { readFile, writeFile } from 'node:fs/promises';
+import { Buffer } from 'node:buffer';
+import { createTypstCompiler } from 'typst-wasm';
+import { createWorkerThread } from 'typst-wasm/worker/node';
+import { convert } from 'pandoc-wasm';
 import { parseHTML } from 'linkedom';
 
 /**
- * @param {import("@awesome.me/buildawesome").UserConfig} config An instance of Eleventy's UserConfig class.
- * @returns {object} The configuration object.
+ * @param {import("@awesome.me/buildawesome").UserConfig} $config An instance of Eleventy's UserConfig class.
  */
-export default function ($config) {
-
+export default function buildawesomeConfig($config) {
 	$config.addTemplateFormats('typ');
 
-	$config.addExtension("typ", {
-		compile: async (inputContent) => {
-			const bibliography = await readFile('bibliography.yml').then(result => result.toString());
-			let disposed = false;
-			let html, docx, pdf;
+	$config.addExtension('typ', {
+		async compile(inputContent) {
+			// Load bibliography
+			const bibliography = await readFile('bibliography.yml').then((result) => result.toString());
+			const disposed = false;
+			// Initialize variables for outputs outside try/catch
+			let html;
+			let docx;
+			let pdf;
 
 			try {
+				// Set up the compiler
 				const compiler = await createTypstCompiler({
-					backend: "worker",
+					backend: 'worker',
 					coreModules: {
-						"engine.core.wasm": WebAssembly.compile(
-							await readFile(
-								new URL(import.meta.resolve("typst-wasm/engine/engine.core.wasm")),
-							),
-						),
-						"engine.core2.wasm": WebAssembly.compile(
-							await readFile(
-								new URL(import.meta.resolve("typst-wasm/engine/engine.core2.wasm")),
-							),
-						),
-						"engine.core3.wasm": WebAssembly.compile(
-							await readFile(
-								new URL(import.meta.resolve("typst-wasm/engine/engine.core3.wasm")),
-							),
-						),
+						'engine.core.wasm': WebAssembly.compile(await readFile(new URL(import.meta.resolve('typst-wasm/engine/engine.core.wasm')))),
+						'engine.core2.wasm': WebAssembly.compile(await readFile(new URL(import.meta.resolve('typst-wasm/engine/engine.core2.wasm')))),
+						'engine.core3.wasm': WebAssembly.compile(await readFile(new URL(import.meta.resolve('typst-wasm/engine/engine.core3.wasm')))),
 					},
 					worker: () =>
-						createWorkerThread(
-							new URL(import.meta.resolve("typst-wasm/worker/worker-thread")),
-						),
+						createWorkerThread(new URL(import.meta.resolve('typst-wasm/worker/worker-thread'))),
 				});
 
 				try {
-					await compiler.addFonts(
-						new Uint8Array(
-							await readFile(
-								new URL(
-									import.meta.resolve("@typst-wasm/fonts/NewCMMath-Regular.otf"),
-								),
-							),
-						),
-					);
+					// Add required fonts
+					await compiler.addFonts(new Uint8Array(await readFile(new URL(import.meta.resolve('@typst-wasm/fonts/NewCMMath-Regular.otf')))));
 
-					await compiler.addSource("index.typ", inputContent);
-					await compiler.addSource("bibliography.yml", bibliography);
+					// Set source
+					await compiler.addSource('index.typ', inputContent);
+					// Set bibliography
+					await compiler.addSource('bibliography.yml', bibliography);
 
+					// Compile HTML
 					html = await compiler.compile({
-						main: "index.typ",
-						format: "html",
+						main: 'index.typ',
+						format: 'html',
 					});
 
+					// Compile PDF
 					pdf = await compiler.compile({
-						main: "index.typ",
-						format: "pdf"
+						main: 'index.typ',
+						format: 'pdf',
 					});
 
-					docx = await HtmlToDocx(html.output);
+					// Convert HTML to Word
+					docx = await convert({ from: 'html', to: 'docx', 'output-file': 'download.docx' }, html.output);
+					const buffer = Buffer.from(await docx.files['download.docx'].arrayBuffer());
 
-				} finally {
+					// Write PDF and Word files.
 					await writeFile('_site/download.pdf', pdf.output);
-					await writeFile('_site/download.docx', docx);
-					await compiler.dispose();
+					await writeFile('_site/download.docx', buffer);
+
+					// Return HTML for output.
 					return async () => html.output;
+				} finally {
+					await compiler.dispose();
 				}
-			} catch (cause) {
-				if (!disposed)
-					console.error(cause instanceof Error ? cause.message : String(cause));
+			} catch (error) {
+				if (!disposed) {
+					console.error(error instanceof Error ? error.message : String(error));
+				}
 			}
 		},
 	});
 
-	$config.addTransform('parse', async function (value, outputPath) {
+	$config.addTransform('parse', async (value, outputPath) => {
 		if (!outputPath || !outputPath.includes('.html')) {
 			return value;
 		}
 
 		const { document } = parseHTML(value);
-		document.querySelectorAll('[style]').forEach(el => el.removeAttribute('style'));
+		for (const element of document.querySelectorAll('[style]')) {
+			element.removeAttribute('style');
+		}
+
 		return document.toString();
 	});
 
