@@ -11,17 +11,11 @@ const TypstPreview = ({ entry, getCollection, window }) => {
 	const body = entry.getIn(['data', 'body']);
 	let bibliography;
 	getCollection('_singletons').then((collection) => {
-		collection.filter((item) => {
-			if (item.get('slug') === 'bibliography') {
-				bibliography = item.getIn(['data', 'body']);
-			}
-
-			return false;
-		});
+		bibliography = collection.find((item) => item.get('slug') === 'bibliography').getIn(['data', 'body']);
 	});
 
 	useEffect(() => {
-		let disposed = false;
+		let isDisposed = false;
 
 		const typstCdn
 			= 'https://cdn.jsdelivr.net/npm/typst-wasm@1.0.0/dist';
@@ -52,7 +46,7 @@ const TypstPreview = ({ entry, getCollection, window }) => {
 						format: 'html',
 					});
 
-					if (!disposed) {
+					if (!isDisposed) {
 						setResult(compiled.output);
 					}
 				} finally {
@@ -62,7 +56,7 @@ const TypstPreview = ({ entry, getCollection, window }) => {
 					}
 				}
 			} catch (error) {
-				if (!disposed) {
+				if (!isDisposed) {
 					console.error(error instanceof Error ? error.message : String(error));
 				}
 			}
@@ -70,7 +64,7 @@ const TypstPreview = ({ entry, getCollection, window }) => {
 
 		render();
 		return () => {
-			disposed = true;
+			isDisposed = true;
 		};
 	}, [body]);
 
@@ -81,7 +75,7 @@ const TypstPreview = ({ entry, getCollection, window }) => {
 		anchorLink.setAttribute('target', '_self');
 	}
 
-	return html`<main dangerouslySetInnerHTML=${{ __html: doc.body.innerHTML }}></main>`;
+	return html`<main dangerouslySetInnerHTML=${{ __html: doc.body.getHTML() }}></main>`;
 };
 
 CMS.registerPreviewTemplate('document', TypstPreview);
