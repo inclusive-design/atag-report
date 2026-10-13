@@ -2,12 +2,35 @@
 
 backend:
   name: github
+  branch: main
+  squash_merges: true
   repo: inclusive-design/atag-report
+  base_url: https://auth.incd.ca
+  commit_messages:
+    create: 'chore(cms): create "{{path}}"'
+    update: 'chore(cms): update "{{path}}"'
+    delete: 'chore(cms): delete "{{path}}"'
+    uploadMedia: 'chore(cms): upload "{{path}}"'
+    deleteMedia: 'chore(cms): delete "{{path}}"'
 
-media_folder: /public/media
+media_folder: /media
 public_folder: /media
 
 singletons:
+  - name: metadata
+    label: Metadata
+    file: _data/metadata.json
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: slug
+        label: Slug
+        widget: string
+        default: "{{ fields.title | slugify }}"
+
   - name: document
     label: Content
     file: index.typ

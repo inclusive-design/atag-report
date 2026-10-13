@@ -4,6 +4,7 @@ import { createTypstCompiler } from 'typst-wasm';
 import { createWorkerThread } from 'typst-wasm/worker/node';
 import { convert } from 'pandoc-wasm';
 import { parseHTML } from 'linkedom';
+import metadata from './_data/metadata.json' with { type: 'json' };
 
 /**
  * @param {import("@awesome.me/buildawesome").UserConfig} $config An instance of Eleventy's UserConfig class.
@@ -64,12 +65,12 @@ export default function buildawesomeConfig($config) {
 					});
 
 					// Convert HTML to Word
-					const docx = await convert({ from: 'html', to: 'docx', 'output-file': 'download.docx' }, html.output);
-					const buffer = Buffer.from(await docx.files['download.docx'].arrayBuffer());
+					const docx = await convert({ from: 'html', to: 'docx', 'output-file': `${metadata.slug}.docx` }, html.output);
+					const buffer = Buffer.from(await docx.files[`${metadata.slug}.docx`].arrayBuffer());
 
 					// Write PDF and Word files.
-					await writeFile('_site/download.pdf', pdf.output);
-					await writeFile('_site/download.docx', buffer);
+					await writeFile(`_site/${metadata.slug}.pdf`, pdf.output);
+					await writeFile(`_site/${metadata.slug}.docx`, buffer);
 
 					// Return HTML for output.
 					return async () => html.output;
