@@ -8,6 +8,19 @@ media_folder: /public/media
 public_folder: /media
 
 singletons:
+  - name: metadata
+    label: Metadata
+    file: _data/metadata.yml
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: slug
+        widget: compute
+        value: "{{ fields.title | slugify }}"
+
   - name: document
     label: Content
     file: index.typ
