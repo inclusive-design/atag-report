@@ -6,7 +6,7 @@ Accessibility Guidelines.
 ## Usage
 
 This project takes a [Typst](https://typst.app) [source file](index.typ) and a
-[Haygriva](https://github.com/typst/hayagriva) [bibliography file](bibliography.yml)
+[Hayagriva](https://github.com/typst/hayagriva) [bibliography file](bibliography.yml)
 and produces HTML and PDF output (via [typst-wasm](https://github.com/typst-wasm/typst-wasm))
 and Word document output (via [pandoc-wasm](https://github.com/pandoc/pandoc-wasm)).
 Links to download the PDF and Word documents are added to the HTML output.
