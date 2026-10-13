@@ -65,12 +65,12 @@ export default function buildawesomeConfig($config) {
 					});
 
 					// Convert HTML to Word
-					const docx = await convert({ from: 'html', to: 'docx', 'output-file': `${metadata.slug}.docx` }, html.output);
-					const buffer = Buffer.from(await docx.files[`${metadata.slug}.docx`].arrayBuffer());
+					const docx = await convert({ from: 'html', to: 'docx', 'output-file': `${metadata.slug || 'download'}.docx` }, html.output);
+					const buffer = Buffer.from(await docx.files[`${metadata.slug || 'download'}.docx`].arrayBuffer());
 
 					// Write PDF and Word files.
-					await writeFile(`_site/${metadata.slug}.pdf`, pdf.output);
-					await writeFile(`_site/${metadata.slug}.docx`, buffer);
+					await writeFile(`_site/${metadata.slug || 'download'}.pdf`, pdf.output);
+					await writeFile(`_site/${metadata.slug || 'download'}.docx`, buffer);
 
 					// Return HTML for output.
 					return async () => html.output;
@@ -86,14 +86,30 @@ export default function buildawesomeConfig($config) {
 	});
 
 	$config.addTransform('parse', async (value, outputPath) => {
-		if (!outputPath || !outputPath.includes('.html')) {
+		if (!outputPath || !outputPath.includes('.html') || outputPath.includes('admin')) {
 			return value;
 		}
 
 		const { document } = parseHTML(value);
+
 		for (const element of document.querySelectorAll('[style]')) {
 			element.removeAttribute('style');
 		}
+
+		const downloadLinks = document.createElement('nav');
+		downloadLinks.setAttribute('aria-labelledby', 'downloads');
+		downloadLinks.innerHTML = `
+			<h2 id="downloads">Downloads</h2>
+			<ul>
+				<li><a download href="/${metadata.slug || 'download'}.pdf">Download PDF</a></li>
+				<li><a download href="/${metadata.slug || 'download'}.docx">Download Word</a></li>
+			</ul>
+		`;
+
+		document.body.append(downloadLinks);
+
+		const toc = document.querySelector('[role="doc-toc"] ol');
+		toc.innerHTML = `${toc.innerHTML}<li><a href="#downloads">Downloads</a></li>`;
 
 		return document.toString();
 	});
