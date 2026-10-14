@@ -30,6 +30,7 @@ singletons:
         label: Slug
         widget: string
         default: "{{ fields.title | slugify }}"
+        hint: This is used for the filename of the downloadable PDF and Word versions of the document.
 
   - name: document
     label: Content
