@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.11.0](https://github.com/inclusive-design/atag-report/compare/v2026.10.0...v2026.11.0) (2026-11-01)
+
+
+### Bug Fixes
+
+* switch auth base_url ([d05393c](https://github.com/inclusive-design/atag-report/commit/d05393ccf99c899a926482268626caf1da64996b))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([50dbaa9](https://github.com/inclusive-design/atag-report/commit/50dbaa96447683126a91c3bd5e60a937ff00480f))
+
 ## [2026.10.0](https://github.com/inclusive-design/atag-report/compare/v2026.10.0...v2026.10.0) (2026-10-13)
 
 
